@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'square';
+  src: url('./../../assets/font/Square.ttf');
+}
+
+@font-face {
+  font-family: 'squareo';
+  src: url('./../../assets/font/Squareo.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: 'square';
+}
+
+body {
+  overflow: none;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+#root {
+  height: 100vh;
+}
+
+*:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
+  /* background: linear-gradient(0.7turn, #3162ce, #2ccec8); */
+  background: linear-gradient(0.7turn, #6387d2, #6bccc8) !important;
+}

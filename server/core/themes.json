@@ -1,0 +1,1096 @@
+{
+  "themes": [
+    {
+      "name": "mythologie grecque",
+      "questions": [
+        {
+          "question": "Qui est le chef des dieux ?",
+          "response": [
+            "zeus"
+          ],
+          "qcm": [
+            "zeus",
+            "poséidon",
+            "apollon",
+            "arès"
+          ]
+        },
+        {
+          "question": "Quel arme possède Zeus ?",
+          "response": [
+            "un eclair",
+            "eclair"
+          ],
+          "qcm": [
+            "une lance",
+            "un éclair",
+            "un trident",
+            "un arc"
+          ]
+        },
+        {
+          "question": "À quel animal est comparée Athéna ?",
+          "response": [
+            "chouette",
+            "une chouette"
+          ],
+          "qcm": [
+            "une chouette",
+            "un lion",
+            "une chèvre",
+            "un serpent"
+          ]
+        },
+        {
+          "question": "Quel est le nom du chien qui garde la porte des enfers ?",
+          "response": [
+            "cerbere",
+            "le chien polycéphale",
+            "chien polycéphale"
+          ],
+          "qcm": [
+            "cerbere",
+            "griffon",
+            "minotaure",
+            "cyclope"
+          ]
+        },
+        {
+          "question": "Qui inventa la lyre ?",
+          "response": [
+            "orphee"
+          ],
+          "qcm": [
+            "orphée",
+            "jason",
+            "héraclès",
+            "oedipe"
+          ]
+        },
+        {
+          "question": "Quel fut le 1er travail d'Hercule ?",
+          "response": [
+            "lion de nemee",
+            "tuer le lion de nemee",
+            "tuer le lion de neme"
+          ],
+          "qcm": [
+            "tuer le sanglier d'Erymanthe",
+            "combattre l'hydre de Lerne",
+            "extermine les ciseaux du lac Stymphale",
+            "tuer le lion de Némée"
+          ]
+        },
+        {
+          "question": "Quel était la boisson des Dieux de l'Olympe ?",
+          "response": [
+            "ambroisie",
+            "l'ambroisie"
+          ],
+          "qcm": [
+            "l'ambroisie",
+            "le nectar",
+            "le vin",
+            "l'oasis"
+          ]
+        },
+        {
+          "question": "De quel animal Zeus prend-il la forme pour séduire Léda ?",
+          "response": [
+            "d'un aigle",
+            "un aigle",
+            "l'aigle",
+            "aigle"
+          ],
+          "qcm": [
+            "d'un aigle",
+            "d'un lion",
+            "d'un cygne",
+            "d'une vache"
+          ]
+        },
+        {
+          "question": "Antigone est la fille de ...",
+          "response": [
+            "oedipe et jocaste",
+            "jocaste et oedipe",
+            "oedipe jocaste",
+            "jocaste oedipe"
+          ],
+          "qcm": [
+            "oedipe et jocaste",
+            "oedipe et polynice",
+            "oedipe et ismène",
+            "oedipe et étéocle"
+          ]
+        },
+        {
+          "question": "Combien de temps dure la guerre de Troie ?",
+          "response": [
+            "10 ans",
+            "dix ans",
+            "une decennie",
+            "decennie"
+          ],
+          "qcm": [
+            "10 ans",
+            "23 ans",
+            "8 ans",
+            "15 ans"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "coupe du monde 2018",
+      "questions": [
+        {
+          "question": "Qui est le pays hôte de la compétition ?",
+          "response": [
+            "russie"
+          ],
+          "qcm": [
+            "Russie",
+            "France",
+            "Allemagne",
+            "Brésil"
+          ]
+        },
+        {
+          "question": "Qui remporte la compétition ?",
+          "response": [
+            "la france",
+            "france",
+            "l'equipe de france",
+            "equipe de france",
+            "fff"
+          ],
+          "qcm": [
+            "Russie",
+            "France",
+            "Allemagne",
+            "Brésil"
+          ]
+        },
+        {
+          "question": "Dans quel groupe était l'équipe de France ?",
+          "response": [
+            "groupe c",
+            "c"
+          ],
+          "qcm": [
+            "c",
+            "d",
+            "f",
+            "a"
+          ]
+        },
+        {
+          "question": "Qui finit meilleur buteur de la compétition ?",
+          "response": [
+            "kane",
+            "harry kane"
+          ],
+          "qcm": [
+            "kane",
+            "lukaku",
+            "griezmann",
+            "modric"
+          ]
+        },
+        {
+          "question": "Contre qui le Portugal jouera-t-il son premier match ?",
+          "response": [
+            "espagne",
+            "l'espagne"
+          ],
+          "qcm": [
+            "l'espagne",
+            "le maroc",
+            "l'iran",
+            "la france"
+          ]
+        },
+        {
+          "question": "Combien de buts ont été inscrits durant cette compétition ?",
+          "response": [
+            "169",
+            "169 buts"
+          ],
+          "qcm": [
+            "219 buts",
+            "169 buts",
+            "154 buts",
+            "187 buts"
+          ]
+        },
+        {
+          "question": "Qui finit 3ème de la compétition ?",
+          "response": [
+            "la belgique",
+            "belgique",
+            "les belges"
+          ],
+          "qcm": [
+            "belgique",
+            "angleterre",
+            "espagne",
+            "croatie"
+          ]
+        },
+        {
+          "question": "Quel est le nom de la mascotte de cette compétition ?",
+          "response": [
+            "zabivaka"
+          ],
+          "qcm": [
+            "zabivaka",
+            "zerbaky",
+            "zibyla",
+            "footix"
+          ]
+        },
+        {
+          "question": "Qui est l'entraîneur de la Seleção dans cette compétition ?",
+          "response": [
+            "tite",
+            "adenor leonardo bacchi"
+          ],
+          "qcm": [
+            "tite",
+            "scolari",
+            "renato gaucho",
+            "dunga"
+          ]
+        },
+        {
+          "question": "Quel est le nom du ballon officiel de la compétition ?",
+          "response": [
+            "telstar 18",
+            "telstar-18"
+          ],
+          "qcm": [
+            "telstar 18",
+            "tango espana",
+            "etrusco",
+            "brazuca"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "personnages d'harry potter",
+      "questions": [
+        {
+          "question": "Quel enfant la famille Dursley a-t-elle adopté ?",
+          "response": [
+            "harry potter",
+            "harry"
+          ],
+          "qcm": [
+            "harry potter",
+            "ron weasley",
+            "hermione granger",
+            "draco malefoy"
+          ]
+        },
+        {
+          "question": "Qui est l'antagoniste principale de l'histoire ?",
+          "response": [
+            "voldemort",
+            "tom jedusor",
+            "tom elvis jedusor",
+            "tu-sais-qui",
+            "tom marvolo riddle"
+          ],
+          "qcm": [
+            "voldemort",
+            "severus rogue",
+            "harry potter",
+            "bellatrix lestrange"
+          ]
+        },
+        {
+          "question": "Qui tue le serpent Nagini ?",
+          "response": [
+            "neville",
+            "neville londubat",
+            "londubat neville"
+          ],
+          "qcm": [
+            "neville londubat",
+            "harry potter",
+            "ron weasley",
+            "hermione granger"
+          ]
+        },
+        {
+          "question": "Qui est le dernier détenteur de la baguette de Sureau ?",
+          "response": [
+            "harry potter",
+            "harry"
+          ],
+          "qcm": [
+            "harry potter",
+            "draco malefoy",
+            "severus rogue",
+            "voldemort"
+          ]
+        },
+        {
+          "question": "Par qui Tonks a-t-elle été formée au métier d'Auror",
+          "response": [
+            "fol-oeil",
+            "fol oeil",
+            "fol-œil",
+            "fol œil",
+            "alastor maugrey",
+            "maugrey"
+          ],
+          "qcm": [
+            "alastor maugrey",
+            "remus lupin",
+            "kingsley shacklebolt",
+            "dolores ombrage"
+          ]
+        },
+        {
+          "question": "Qui dirige la maison Poutsouffle ?",
+          "response": [
+            "pomona chourave",
+            "pomona"
+          ],
+          "qcm": [
+            "pomona",
+            "helga",
+            "hepzibah",
+            "zacharias"
+          ]
+        },
+        {
+          "question": "Qui finit ministre de la magie britanniques (2020) ?",
+          "response": [
+            "hermione",
+            "hermione granger"
+          ],
+          "qcm": [
+            "hermione granger",
+            "kingsley shacklebolt",
+            "pius thicknesse",
+            "rufus scrimgeour"
+          ]
+        },
+        {
+          "question": "Qui partage son patronus de chat avec Dolores Ombrage ?",
+          "response": [
+            "minerva mcgonagall",
+            "minerva",
+            "mcgonagall",
+            "mcgonagal"
+          ],
+          "qcm": [
+            "minerva mcgonagall",
+            "albus dumbledore",
+            "severus rogue",
+            "remus lupin"
+          ]
+        },
+        {
+          "question": "Sous quelle forme humaine a-t-on vu Nagini ?",
+          "response": [
+            "bathilda tourdesac",
+            "bathilda"
+          ],
+          "qcm": [
+            "bathilda tourdesac",
+            "voldemort",
+            "harry potter",
+            "bertha jorkins"
+          ]
+        },
+        {
+          "question": "A quoi fait allusion le mot \"Dumbledore\" en anglais ?",
+          "response": [
+            "bourdon"
+          ],
+          "qcm": [
+            "bourdon",
+            "blanc",
+            "chouette",
+            "cicatrice"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Maths Collège",
+      "questions": [
+        {
+          "question": "2 + 2 * 2 = ?",
+          "response": [
+            "6",
+            "six"
+          ],
+          "qcm": [
+            "6",
+            "8",
+            "12",
+            "4"
+          ]
+        },
+        {
+          "question": "Quelle est la moyenne de la série : 10 ; 15 ; 20 ?",
+          "response": [
+            "15",
+            "quinze"
+          ],
+          "qcm": [
+            "15",
+            "13.5",
+            "14.5",
+            "14"
+          ]
+        },
+        {
+          "question": "Combien vaut le carré de 4 ?",
+          "response": [
+            "16",
+            "seize"
+          ],
+          "qcm": [
+            "16",
+            "2",
+            "4",
+            "24"
+          ]
+        },
+        {
+          "question": "Comment s'appelle le côté opposé à l'angle droit, dans un triangle ?",
+          "response": [
+            "hypotenuse",
+            "l'hypotenuse"
+          ],
+          "qcm": [
+            "l'hypoténuse",
+            "l'orthocentre",
+            "la bissectrice",
+            "la cathète"
+          ]
+        },
+        {
+          "question": "Que représente le chiffre des dixièmes dans 28,54 ?",
+          "response": [
+            "5",
+            "cinq"
+          ],
+          "qcm": [
+            "5",
+            "8",
+            "28",
+            "54"
+          ]
+        },
+        {
+          "question": "Ecrire 777 en lettres",
+          "response": [
+            "sept cent soixante-dix-sept"
+          ],
+          "qcm": [
+            "sept cent soixante-dix-sept",
+            "sept-cent-soixante-dix-sept",
+            "sept cent soixante dix sept",
+            "sept-cent soixante-dix-sept"
+          ]
+        },
+        {
+          "question": "Quel est le PGCD de 21 et 42 ?",
+          "response": [
+            "21",
+            "vingt-et-un"
+          ],
+          "qcm": [
+            "21",
+            "7",
+            "3",
+            "2"
+          ]
+        },
+        {
+          "question": "Quel base possède un tétraèdre ?",
+          "response": [
+            "triangle",
+            "triangulaire"
+          ],
+          "qcm": [
+            "triangle",
+            "carré",
+            "rectangle",
+            "losange"
+          ]
+        },
+        {
+          "question": "Que vaut \"x\" dans l'expression: -5x + 6 = 1 ? ",
+          "response": [
+            "1",
+            "un"
+          ],
+          "qcm": [
+            "1",
+            "-6",
+            "6",
+            "-1"
+          ]
+        },
+        {
+          "question": "Combien vaut un t-shirt à 45€ qui baisse de 23% ?",
+          "response": [
+            "34.65",
+            "34,65"
+          ],
+          "qcm": [
+            "34,65",
+            "36",
+            "35,55",
+            "35.1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alphabet",
+      "questions": [
+        {
+          "question": "Quel est la première lettre de l'alphabet français ?",
+          "response": [
+            "a"
+          ],
+          "qcm": [
+            "a",
+            "b",
+            "c",
+            "z"
+          ]
+        },
+        {
+          "question": "Comment appelle-t-on un individu parlant deux langues ?",
+          "response": [
+            "bilingue"
+          ],
+          "qcm": [
+            "bilingue",
+            "synoptiquee",
+            "interprète",
+            "ligature"
+          ]
+        },
+        {
+          "question": "Quel est l'alphabet utilisé dans plusieurs langues slaves ?",
+          "response": [
+            "cyrillique",
+            "alphabet cyrillique"
+          ],
+          "qcm": [
+            "cyrillique",
+            "grec",
+            "copte",
+            "japonais"
+          ]
+        },
+        {
+          "question": "Quel est le signe ressemblant à des guillemets en japonais ?",
+          "response": [
+            "dakuten",
+            "ten-ten",
+            "ten ten"
+          ],
+          "qcm": [
+            "dakuten",
+            "nigori",
+            "kanjis",
+            "dômaji"
+          ]
+        },
+        {
+          "question": "Que signifie εὐθανασία en français ?",
+          "response": [
+            "euthanasie"
+          ],
+          "qcm": [
+            "euthanasie",
+            "eurasiatique",
+            "égérie",
+            "épitaphe"
+          ]
+        },
+        {
+          "question": "Comment se nomme l'ancienne pièce néerlandaise connue sous le signe ƒ (gulden) ?",
+          "response": [
+            "florin",
+            "le florin"
+          ],
+          "qcm": [
+            "florin",
+            "franc",
+            "heldu",
+            "euro"
+          ]
+        },
+        {
+          "question": "Quel alphabet introduit les lettres Φ, Χ et Ψ ?",
+          "response": [
+            "le grec",
+            "grec",
+            "l'alphabet grec",
+            "alphabet grec"
+          ],
+          "qcm": [
+            "grec",
+            "latin",
+            "géorgien",
+            "cyrillique"
+          ]
+        },
+        {
+          "question": "Comment dit-on \"trésor\" en Tengwar (Tolkien) ?",
+          "response": [
+            "harma",
+            "aha"
+          ],
+          "qcm": [
+            "harma",
+            "hanna",
+            "hipou",
+            "helga"
+          ]
+        },
+        {
+          "question": "Comment se nomme une phrase contenant toutes les lettres de l'alphabet ?",
+          "response": [
+            "pangramme",
+            "le pangramme"
+          ],
+          "qcm": [
+            "pangramme",
+            "apocope",
+            "palindrome",
+            "lipogramme"
+          ]
+        },
+        {
+          "question": "Quelle a été la 27ème lettre de l'alphabet ?",
+          "response": [
+            "l'esperluette",
+            "esperluette",
+            "l'esperluete",
+            "esperluete",
+            "la perluette",
+            "perluette",
+            "la perluète",
+            "perluète"
+          ],
+          "qcm": [
+            "l'esperluette",
+            "l'arobase",
+            "astérisque",
+            "croisillon"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "capitales du monde",
+      "questions": [
+        {
+          "question": "Quelle est la capitale de la France ?",
+          "response": [
+            "paris"
+          ],
+          "qcm": [
+            "paris",
+            "berlin",
+            "rome",
+            "madrid"
+          ]
+        },
+        {
+          "question": "Quelle ville reste au coeur du conflit israélo-palestinien ?",
+          "response": [
+            "jerusalem"
+          ],
+          "qcm": [
+            "jérusalem",
+            "gaza",
+            "amman",
+            "oulan-bator"
+          ]
+        },
+        {
+          "question": "Dans quelle ville se déroule la finale de la coupe du monde 2018 ?",
+          "response": [
+            "moscou"
+          ],
+          "qcm": [
+            "moscou",
+            "saint petersbourg",
+            "nicosie",
+            "minsk"
+          ]
+        },
+        {
+          "question": "Quelle est la capitale du Brésil ?",
+          "response": [
+            "brasilia",
+            "Brasília"
+          ],
+          "qcm": [
+            "brasilia",
+            "rio de janeiro",
+            "brazzavile",
+            "sao paulo"
+          ]
+        },
+        {
+          "question": "Quelle est la plus grande capitale du monde ?",
+          "response": [
+            "tokyo"
+          ],
+          "qcm": [
+            "tokyo",
+            "new york",
+            "pékin",
+            "mexico"
+          ]
+        },
+        {
+          "question": "Dans quelle ville se trouve la Burj Khalifa ?",
+          "response": [
+            "dubai"
+          ],
+          "qcm": [
+            "dubaï",
+            "mascate",
+            "sanaa",
+            "riyad"
+          ]
+        },
+        {
+          "question": "Où se déroule les Jeux olympiques d'été de 1988 ?",
+          "response": [
+            "seoul"
+          ],
+          "qcm": [
+            "séoul",
+            "tokyo",
+            "pyongyang",
+            "berlin"
+          ]
+        },
+        {
+          "question": "Quel est la capitale du Sri Lanka",
+          "response": [
+            "sri jayawardenapura kotte"
+          ],
+          "qcm": [
+            "sri jayawardenapura kotte",
+            "sri jayawardera kotte",
+            "sri jayadenapura kotte",
+            "sri jayawardenapuram kotte"
+          ]
+        },
+        {
+          "question": "Quelle capitale présente la tour Namemba ?",
+          "response": [
+            "brazzaville"
+          ],
+          "qcm": [
+            "brazzaville",
+            "djiboutti",
+            "kinshasa",
+            "rabat"
+          ]
+        },
+        {
+          "question": "En quelle année, le mur de Berlin a été construit, séparant la capitale en deux ?",
+          "response": [
+            "13 août 1961",
+            "1961"
+          ],
+          "qcm": [
+            "1961",
+            "1975",
+            "1990",
+            "1958"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rap francais",
+      "questions": [
+        {
+          "question": "Quel rappeur connu est surnommé \"le duc de Boulogne\" ?",
+          "response": [
+            "booba"
+          ],
+          "qcm": [
+            "Booba",
+            "Kaaris",
+            "La Fouine",
+            "JUL"
+          ]
+        },
+        {
+          "question": "Quel groupe de rap est l’auteur du tube \"Je danse le Mia\" ?",
+          "response": [
+            "iam"
+          ],
+          "qcm": [
+            "IAM",
+            "Psy 4 de la Rime",
+            "NTM",
+            "Massilia Sound System"
+          ]
+        },
+        {
+          "question": "Booba et Ali ont formé un duo, quel était son nom ?",
+          "response": [
+            "lunatic"
+          ],
+          "qcm": [
+            "lunatic",
+            "sniper",
+            "arsenik",
+            "92i"
+          ]
+        },
+        {
+          "question": "Quel rappeur a été poursuivi en justice par Éric Zemmour ?",
+          "response": [
+            "youssoupha"
+          ],
+          "qcm": [
+            "youssoupha",
+            "mc soolar",
+            "kaaris",
+            "booba"
+          ]
+        },
+        {
+          "question": "Complétez les paroles de la musique \"King Kong\" de MHD: \"C'est pas du cinéma, ...\"",
+          "response": [
+            "c'est la rea"
+          ],
+          "qcm": [
+            "c'est la réa",
+            "j'ai pas ché-lâ",
+            "c'est la cata",
+            "c'est le papa"
+          ]
+        },
+        {
+          "question": "Combien d'albums studio a sorti le rappeur JUL ?",
+          "response": [
+            "18",
+            "dix-huit",
+            "dix huit"
+          ],
+          "qcm": [
+            "18",
+            "21",
+            "16",
+            "20"
+          ]
+        },
+        {
+          "question": "Quel âge à Damso ?",
+          "response": [
+            "29",
+            "29 ans",
+            "1992"
+          ],
+          "qcm": [
+            "29",
+            "27",
+            "30",
+            "28"
+          ]
+        },
+        {
+          "question": "Quel est le véritable nom de Kaaris (nom complet) ?",
+          "response": [
+            "okou armand gnakouri"
+          ],
+          "qcm": [
+            "Okou Armand Gnakouri",
+            "Marcel Junior Loutarila",
+            "Élie Yaffa",
+            "Gandhi Djuna"
+          ]
+        },
+        {
+          "question": "Combien y a-t-il de sons dans \"LMF\" de Freeze Corleone?",
+          "response": [
+            "17",
+            "dix sept",
+            "dix-sept"
+          ],
+          "qcm": [
+            "17",
+            "15",
+            "13",
+            "16"
+          ]
+        },
+        {
+          "question": "Selon SNEP, quel est le 2ème titre de rap le plus écouté de l'année 2020 en France?",
+          "response": [
+            "angela"
+          ],
+          "qcm": [
+            "Angela",
+            "Ne reviens pas",
+            "Bande Organisée",
+            "Djomb"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "complétez les paroles - 2020",
+      "questions": [
+        {
+          "question": "\"En bande organisée, ... \" - Bande Organisée (13'Organisé)",
+          "response": [
+            "personne peut nous canaliser"
+          ],
+          "qcm": [
+            "personne peut nous canaliser",
+            "pisté par les banalisées",
+            "c'est d'la moula qu'j'ai effrité",
+            "deux mois après, j'l'ai déjà quitté"
+          ]
+        },
+        {
+          "question": "\"L'argent du boss, ... \" - 6.3 (Naps)",
+          "response": [
+            "elle veut ma sacem"
+          ],
+          "qcm": [
+            "elle veut ma SACEM",
+            "l'argent du buzz",
+            "addition salée mais j'suis préparé",
+            "l'argent des gosses"
+          ]
+        },
+        {
+          "question": "\"Tu parles avec une Anissa, ... \" - Anissa (Wejdene)",
+          "response": [
+            "mais moi j'm'appelle wejdene",
+            "mais moi je m'appelle wejdene"
+          ],
+          "qcm": [
+            "mais moi j'm'appelle Wejdene",
+            "T'as cru qu'j'allais pas capter?",
+            "Je pouvais dead pour toi",
+            "C'est une autre que t'aimes"
+          ]
+        },
+        {
+          "question": "\"Avec toi, la vie est trop courte, ... \" - Melegim (Dadju)",
+          "response": [
+            "avec toi, je revis tout court"
+          ],
+          "qcm": [
+            "avec toi, je revis tout court",
+            "merci d'alléger mes épaules trop lourdes",
+            "pour toi, je pourrais faire le sourd",
+            "j'aimerai bien que tu ramènes ma gourde"
+          ]
+        },
+        {
+          "question": "\"Hollywood, j'me fais des films, ... \" - 911 (Damso)",
+          "response": [
+            "j'reve les yeux grands ouverts",
+            "je reve les yeux grands ouverts"
+          ],
+          "qcm": [
+            "j'rêve les yeux grands ouverts",
+            "j'crois qu'un gangster est tombé love",
+            "une mise en abyme dans Inception",
+            "avec du popcorn et du Lime"
+          ]
+        },
+        {
+          "question": "\"On se disait pour la vie, ... \" Habibi (Kendji Girac)",
+          "response": [
+            "j'ai jure, t'as promis",
+            "j'ai jure, tu as promis"
+          ],
+          "qcm": [
+            "j'ai juré, t'as promis",
+            "on se disait pour la vie",
+            "c'est pas comme ça que ça se finit",
+            "là, dans mon coeur, habibi"
+          ]
+        },
+        {
+          "question": "\"Je ne peux pas supporter, ... \" - Joli Nana (Aya Nakamura)",
+          "response": [
+            "t'as ose me comparer",
+            "tu as ose me comparer"
+          ],
+          "qcm": [
+            "t'as osé me comparer",
+            "je ne veux plus te supporter",
+            "tu veux qu'j'avoue mes torts",
+            "mais j'avoue qu'c'est mort"
+          ]
+        },
+        {
+          "question": "\"J'arrive lourd comme 10 grizzlis, ... \" - DRILL FR4 (GAZO x Freeze Corleone) ?",
+          "response": [
+            "il m'faut un salaire comme si j'joue chez les grizzlies",
+            "il me faut un salaire comme si je joue chez les grizzlies",
+            "il me faut un salaire comme si j'joue chez les grizzlies",
+            "il m'faut un salaire comme si je joue chez les grizzlies"
+          ],
+          "qcm": [
+            "il m'faut un salaire comme si j'joue chez les Grizzlies",
+            "Lunettes Cartier comme Tee Grizzley",
+            "j'menvole devant les concurrents toujours en lice",
+            "j'suis fonce-dé dans le vaisseau comme Harisson"
+          ]
+        },
+        {
+          "question": "J'serai à l'hôtel, dans un nuage de fumée - Angela (Hatik)",
+          "response": [
+            "J'te vois derriere les vitres teintees",
+            "Je te vois derriere les vitres teintees"
+          ],
+          "qcm": [
+            "J'te vois derrière les vitres teintées",
+            "Ce soir j'vais quitter l'rrain-ter",
+            "Dans quel resto tu veux manger?",
+            "un peu de rosé en pleine soirée"
+          ]
+        },
+        {
+          "question": "\"Hôtel cinq étoiles, ... \" - La kiffance (Naps)",
+          "response": [
+            "j'prends le p'tit dej' en pyjama",
+            "je prends le petit dej' en pyjama",
+            "je prends le petit dej en pyjama",
+            "je prends le p'tit dej' en pyjama",
+            "j'prends le petit dej' en pyjama"
+          ],
+          "qcm": [
+            "j'prends le p'tit dej' en pyjama",
+            "faire un p'tit pétou sur le Mont Fujiama",
+            "faire le tour d'la Thaïlande en 500 Yamaha",
+            "voyager jusqu'au Nirvana"
+          ]
+        }
+      ]
+    }
+  ]
+}

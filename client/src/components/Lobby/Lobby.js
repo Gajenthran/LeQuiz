@@ -154,7 +154,7 @@ const Lobby = ({ user, users }) => {
   return (
     <>
       <div className="lobby-screen">
-        {user ? (
+        {(user && users) ? (
           <div className="div-lobby">
             <h3 className="lobby--title" onClick={() => onReturnHome()}>
               Jijou-Quiz

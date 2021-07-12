@@ -315,7 +315,7 @@ const Game = ({
       <>
         <div
           className="selected-theme"
-          style={{ left: startTurn ? '30%' : '40%' }}
+          style={{ left: startTurn ? '33%' : '41%' }}
         >
           <div
             className='selected-quiz'
@@ -434,7 +434,6 @@ const Game = ({
     if (!theme)
       return null
 
-    console.log(response)
     return (
       <div className="question-container">
         <div className="progress-container">

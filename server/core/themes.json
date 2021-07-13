@@ -1064,8 +1064,8 @@
         {
           "question": "J'serai à l'hôtel, dans un nuage de fumée - Angela (Hatik)",
           "response": [
-            "J'te vois derriere les vitres teintees",
-            "Je te vois derriere les vitres teintees"
+            "j'te vois derriere les vitres teintees",
+            "je te vois derriere les vitres teintees"
           ],
           "qcm": [
             "J'te vois derrière les vitres teintées",
@@ -1225,6 +1225,145 @@
             "Antoine Lavoisier",
             "Yves Chauvin",
             "Louis Pasteur"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "citations célèbres",
+      "questions": [
+        {
+          "question": "Qui a dit \"C’est un petit pas pour l’homme, un grand pas pour l’humanité\" ?",
+          "response": [
+            "neil armstrong",
+            "armstrong"
+          ],
+          "qcm": [
+            "neil armstrong",
+            "michael collins",
+            "buzz aldrin",
+            "elon musk"
+          ]
+        },
+        {
+          "question": "Quel acteur dit \"C’est à moi que tu parles ? C’est à moi que tu parles ?\" ?",
+          "response": [
+            "robert de niro",
+            "de niro",
+            "travis bickle"
+          ],
+          "qcm": [
+            "robert de niro",
+            "will smith",
+            "Anthony Hopkins",
+            "Al Pacino"
+          ]
+        },
+        {
+          "question": "Qui prononce les paroles suivantes: \"Je suis venu, j’ai vu, j’ai vaincu.\" ?",
+          "response": [
+            "jules cesar",
+            "cesar"
+          ],
+          "qcm": [
+            "jules césar",
+            "vercingétorix",
+            "rimbaud",
+            "charles de gaulle"
+          ]
+        },
+        {
+          "question": "Qui dit \"Je pense donc je suis\" (ou \"Cogito ergo sum\") ?",
+          "response": [
+            "descartes",
+            "rene descartes"
+          ],
+          "qcm": [
+            "descartes",
+            "galilée",
+            "aristote",
+            "nietzsche"
+          ]
+        },
+        {
+          "question": "Quel rappeur dit \"Les hommes mentent mais pas les chiffres\" ?",
+          "response": [
+            "booba",
+            "mark twain"
+          ],
+          "qcm": [
+            "booba",
+            "kaaris",
+            "la fouine",
+            "damso"
+          ]
+        },
+        {
+          "question": "Qui dit \"La religion est l'opium du peuple\" ?",
+          "response": [
+            "karl marx",
+            "marx"
+          ],
+          "qcm": [
+            "karl marx",
+            "Alain Houziaux",
+            "emmanuel kant",
+            "Hegel"
+          ]
+        },
+        {
+          "question": "Qui dit \"Quand je vois Bill Gates, je vois l’argent mais pas la puissance\" ?",
+          "response": [
+            "zlatan",
+            "ibrahimovic",
+            "zlatan ibrahimovic"
+          ],
+          "qcm": [
+            "zlatan ibrahimovic",
+            "jeff bezos",
+            "tim cook",
+            "steve wozniak"
+          ]
+        },
+        {
+          "question": "Qui dit \"Se pardonner et s’accepter tel que l’on est, voila ce que signifie être fort\" ?",
+          "response": [
+            "itachi",
+            "itachi uchiwa",
+            "itachi uchiha"
+          ],
+          "qcm": [
+            "itachi",
+            "akainu",
+            "netero",
+            "gohan"
+          ]
+        },
+        {
+          "question": "Qui dit \"la télé, c'est que de la télé\" ?",
+          "response": [
+            "cyril hanouna",
+            "hanouna"
+          ],
+          "qcm": [
+            "cyril hanouna",
+            "cyril feraud",
+            "arthur",
+            "olivier minne"
+          ]
+        },
+        {
+          "question": "De qui s'inspire la citation \"La république, c'est moi\" de JL Mélenchon ?",
+          "response": [
+            "louis xiv",
+            "louis 14",
+            "l'état, c'est moi"
+          ],
+          "qcm": [
+            "louis xiv",
+            "mark twain",
+            "charle de gaulle",
+            "henri iv"
           ]
         }
       ]

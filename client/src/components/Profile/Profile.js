@@ -47,7 +47,7 @@ const Profile = ({ location }) => {
           onClick={() => setAvatarIndex((avatarIndex + 1) % NB_AVATARS)}
         />
         <input
-          placeholder="Name"
+          placeholder="Entrez votre nom"
           type="text"
           onChange={(event) => setName(event.target.value)}
         />
@@ -62,11 +62,11 @@ const Profile = ({ location }) => {
   }
 
   const onRedirectGithub = () => {
-    window.location = "https://github.com/Gajenthran"
+    window.location = 'https://github.com/Gajenthran'
   }
 
   const onRedirectDev = () => {
-    window.location = "/dev"
+    window.location = '/dev'
   }
 
   const renderFooter = () => {
@@ -79,7 +79,7 @@ const Profile = ({ location }) => {
   }
 
   const onReturnHome = () => {
-    window.location = "/"
+    window.location = '/'
   }
 
   return (

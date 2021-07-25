@@ -1,26 +1,37 @@
-const fs = require('fs')
-const path = require('path')
+const fs = require("fs")
+const path = require("path")
 
 const COUNTDOWN = 60
 
 const DIC_ACCENTED_CHAR = {
-  "é": "e", "à": "a", "è": "e", "ù": "u", "â": "a",
-  "î": "i", "ô": "o", "û": "u", "ê": "e", "ï": "i",
-  "ü": "u", "ö": "o", "ë": "e", "ç": "c",
+  é: "e",
+  à: "a",
+  è: "e",
+  ù: "u",
+  â: "a",
+  î: "i",
+  ô: "o",
+  û: "u",
+  ê: "e",
+  ï: "i",
+  ü: "u",
+  ö: "o",
+  ë: "e",
+  ç: "c",
 }
 
 const THEMES_JSON = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '/themes.json'))
+  fs.readFileSync(path.join(__dirname, "/themes.json"))
 )
 
 const THEMES = THEMES_JSON.themes
 
-const shuffleArray = deck => {
+const shuffleArray = (deck) => {
   for (let i = deck.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    const temp = deck[i];
-    deck[i] = deck[j];
-    deck[j] = temp;
+    const j = Math.floor(Math.random() * (i + 1))
+    const temp = deck[i]
+    deck[i] = deck[j]
+    deck[j] = temp
   }
 }
 
@@ -41,20 +52,20 @@ class Game {
     this.turnStreak = false
     this.streakCount = 0
     this.streakCancel = false
-    this.themeIndexes = Array.from(
-      Array(THEMES.length), (_, index) => index);
+    this.themeIndexes = Array.from(Array(THEMES.length), (_, index) => index)
     shuffleArray(this.themeIndexes)
     this.quizIndexes = this.themeIndexes.slice(0, options.nbQuiz)
     this.doneThemes = new Array(options.nbQuiz).fill(false)
     this.themes = Array.from(
-      Array(this.quizIndexes.length), (_, i) => THEMES[this.quizIndexes[i]]);
+      Array(this.quizIndexes.length),
+      (_, i) => THEMES[this.quizIndexes[i]]
+    )
     this.currentTheme = -1
     this.theme = null
     this.answers = new Array(10)
     this.currentQuestion = 0
-    this.countdown = null;
-    this.timer = null;
-
+    this.countdown = null
+    this.timer = null
 
     for (let i = 0; i < this.users.length; i++) {
       this.users[i].currentScore = 0
@@ -62,8 +73,8 @@ class Game {
       this.users[i].streak = false
     }
 
-    this.currentPlayer = Math.floor(Math.random() * this.users.length);
-    this.firstPlayer = this.currentPlayer;
+    this.currentPlayer = Math.floor(Math.random() * this.users.length)
+    this.firstPlayer = this.currentPlayer
   }
 
   getCurrentPlayer() {
@@ -103,35 +114,41 @@ class Game {
 
   checkAnswer(answer, qcmIndex) {
     const word = answer
-      .replace(/[^\w ]/g, char => DIC_ACCENTED_CHAR[char] || char)
+      .replace(/[^\w ]/g, (char) => DIC_ACCENTED_CHAR[char] || char)
       .toLowerCase()
 
-    const { questions } = this.theme;
+    const { questions } = this.theme
     let response = null
     if (questions[this.currentQuestion].response.includes(word)) {
       this.users[this.currentPlayer].currentScore++
       this.answers[this.currentQuestion] = 1
       response = qcmIndex === -1 ? answer : qcmIndex
-      if (!this.streakCancel && this.turnStreak)
-        this.streakCount++
+      if (!this.streakCancel && this.turnStreak) this.streakCount++
     } else {
       if (!this.streakCancel && this.turnStreak) {
         this.streakCancel = true
         this.streakCount =
-          this.streakCount < 5 ?
-            0 : this.streakCount < 8 ?
-              5 : this.streakCount < 10 ?
-                8 : 10
+          this.streakCount < 5
+            ? 0
+            : this.streakCount < 8
+            ? 5
+            : this.streakCount < 10
+            ? 8
+            : 10
       }
       this.answers[this.currentQuestion] =
         this.answers[this.currentQuestion] === 2 ? 0 : 2
-      response = qcmIndex === -1 ?
-        questions[this.currentQuestion].response[0] :
-        questions[this.currentQuestion].qcm.findIndex(q =>
-          questions[this.currentQuestion].response.includes(q))
+      response =
+        qcmIndex === -1
+          ? questions[this.currentQuestion].response[0]
+          : questions[this.currentQuestion].qcm.findIndex((q) =>
+              questions[this.currentQuestion].response.includes(q)
+            )
     }
 
-    const allChecked = this.answers.find(answer => answer === -1 || answer === 2)
+    const allChecked = this.answers.find(
+      (answer) => answer === -1 || answer === 2
+    )
     if (allChecked) {
       do {
         this.currentQuestion = (this.currentQuestion + 1) % this.answers.length
@@ -147,10 +164,13 @@ class Game {
   newRound(removeUser = false) {
     if (!removeUser) {
       this.streakCount =
-        this.streakCount < 5 ?
-          0 : this.streakCount < 8 ?
-            5 : this.streakCount < 10 ?
-              8 : 10
+        this.streakCount < 5
+          ? 0
+          : this.streakCount < 8
+          ? 5
+          : this.streakCount < 10
+          ? 8
+          : 10
 
       this.users[this.currentPlayer].currentScore += this.streakCount
 
@@ -161,7 +181,7 @@ class Game {
     }
 
     this.currentPlayer = (this.currentPlayer + 1) % this.users.length
-    const remainingThemes = this.doneThemes.filter(t => t === false).length
+    const remainingThemes = this.doneThemes.filter((t) => t === false).length
     if (
       remainingThemes < this.users.length &&
       this.currentPlayer === this.firstPlayer
@@ -175,12 +195,11 @@ class Game {
     this.theme = null
     this.answers.fill(-1)
     this.currentQuestion = 0
-    this.countdown = null;
-    this.timer = null;
+    this.countdown = null
+    this.timer = null
 
     return true
   }
-
 
   setCountdown(fct, timeout) {
     this.countdown = setInterval(fct, timeout)
@@ -195,7 +214,7 @@ class Game {
     const cd = this.options.countdown || COUNTDOWN
     this.timer = {
       start: now.getTime(),
-      end: now.getTime() + cd * 1000
+      end: now.getTime() + cd * 1000,
     }
   }
 
@@ -223,7 +242,7 @@ class Game {
       answers: this.answers,
       currentQuestion: this.currentQuestion,
       currentPlayer: this.currentPlayer,
-      streakCount: this.streakCount
+      streakCount: this.streakCount,
     }
   }
 
@@ -246,11 +265,12 @@ class Game {
   }
 
   updateCurrentPlayer(deletedIndex) {
-    if (deletedIndex >= this.currentPlayer)
-      return
+    if (deletedIndex >= this.currentPlayer) return
 
-    this.currentPlayer = this.currentPlayer - 1 < 0 ?
-      this.users.length - 1 : this.currentPlayer - 1
+    this.currentPlayer =
+      this.currentPlayer - 1 < 0
+        ? this.users.length - 1
+        : this.currentPlayer - 1
   }
 
   /**
@@ -260,17 +280,16 @@ class Game {
    */
   removeUser(id) {
     const index = this.users.findIndex((user) => user.id === id)
-    let currentPlayer = (
+    let currentPlayer =
       this.users.length > 0 &&
       this.users[this.currentPlayer].id === this.users[index].id
-    )
 
     if (
       currentPlayer &&
       this.users[this.firstPlayer].id === this.users[index].id &&
       this.users.length > 0
     )
-      this.firstPlayer = (this.firstPlayer + 1) % this.users.length - 1
+      this.firstPlayer = ((this.firstPlayer + 1) % this.users.length) - 1
 
     if (index !== -1) this.users.splice(index, 1)
 

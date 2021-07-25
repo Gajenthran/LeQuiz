@@ -1,66 +1,67 @@
 import React, { useState } from 'react'
+import { ENDPOINT } from '../../config/endpoint'
 import { fetchWrapper } from '../constants/fetch'
 import { IMGS } from '../constants/images'
 
 import './Dev.css'
 
 const QUIZ_STATE = {
-  "title": 1,
-  "questions": 2,
-  "sent": 3
+  title: 1,
+  questions: 2,
+  sent: 3,
 }
 
 const QUESTIONS = [
   {
     question: '',
     response: [''],
-    qcm: new Array(4).fill('')
+    qcm: new Array(4).fill(''),
   },
   {
     question: '',
     response: [''],
-    qcm: new Array(4).fill('')
+    qcm: new Array(4).fill(''),
   },
   {
     question: '',
     response: [''],
-    qcm: new Array(4).fill('')
+    qcm: new Array(4).fill(''),
   },
   {
     question: '',
     response: [''],
-    qcm: new Array(4).fill('')
+    qcm: new Array(4).fill(''),
   },
   {
     question: '',
     response: [''],
-    qcm: new Array(4).fill('')
+    qcm: new Array(4).fill(''),
   },
   {
     question: '',
     response: [''],
-    qcm: new Array(4).fill('')
+    qcm: new Array(4).fill(''),
   },
   {
     question: '',
     response: [''],
-    qcm: new Array(4).fill('')
+    qcm: new Array(4).fill(''),
   },
   {
     question: '',
     response: [''],
-    qcm: new Array(4).fill('')
+    qcm: new Array(4).fill(''),
   },
   {
     question: '',
     response: [''],
-    qcm: new Array(4).fill('')
+    qcm: new Array(4).fill(''),
   },
   {
     question: '',
     response: [''],
-    qcm: new Array(4).fill('')
-  }
+    qcm: new Array(4).fill(''),
+  },
 ]
 const TITLE_LIMIT = 30
 const QUESTION_LIMIT = 70
@@ -68,15 +69,14 @@ const REP_LIMIT = 55
 const NB_QUESTIONS = QUESTIONS.length
 
 const CreateQuiz = () => {
-  const [quizState, setQuizState] = useState(QUIZ_STATE["title"])
+  const [quizState, setQuizState] = useState(QUIZ_STATE['title'])
   const [title, setTitle] = useState('')
   const [selectedQuestion, setSelectedQuestion] = useState(0)
   const [questions, setQuestions] = useState(QUESTIONS)
   const [error, setError] = useState('')
 
   const onStartQuiz = () => {
-    if (TITLE_LIMIT - title.length > 0)
-      setQuizState(QUIZ_STATE["questions"])
+    if (TITLE_LIMIT - title.length > 0) setQuizState(QUIZ_STATE['questions'])
   }
 
   const renderTitle = () => {
@@ -92,7 +92,9 @@ const CreateQuiz = () => {
           />
           <p
             className="dev-create-title-limit"
-            style={{ color: TITLE_LIMIT - title.length > 0 ? 'black' : '#f12e2e' }}
+            style={{
+              color: TITLE_LIMIT - title.length > 0 ? 'black' : '#f12e2e',
+            }}
           >
             {TITLE_LIMIT - title.length}
           </p>
@@ -115,8 +117,10 @@ const CreateQuiz = () => {
   const onAddResponse = () => {
     const questions_ = [...questions]
 
-    questions_[selectedQuestion].response =
-      [...questions_[selectedQuestion].response, '']
+    questions_[selectedQuestion].response = [
+      ...questions_[selectedQuestion].response,
+      '',
+    ]
     setQuestions(questions_)
   }
 
@@ -127,7 +131,6 @@ const CreateQuiz = () => {
     setQuestions(questions_)
   }
 
-
   const onChangeQCM = (e, index) => {
     const questions_ = [...questions]
 
@@ -136,10 +139,8 @@ const CreateQuiz = () => {
   }
 
   const onSubmitQuiz = () => {
-    fetchWrapper.post(
-      `http://localhost:8080/submit-quiz`,
-      { quiz: { title, questions } }
-    )
+    fetchWrapper
+      .post(`${ENDPOINT}/submit-quiz`, { quiz: { title, questions } })
       .then((data) => {
         setTitle('')
         const q = [...QUESTIONS]
@@ -148,9 +149,8 @@ const CreateQuiz = () => {
         setQuizState(QUIZ_STATE['title'])
         window.location = '/dev'
       })
-      .catch((error) => setError(error));
+      .catch((error) => setError(error))
     // socket.emit('dev:send-quiz')
-
   }
 
   const renderQuiz = () => {
@@ -176,8 +176,10 @@ const CreateQuiz = () => {
               className="dev-category-question-limit"
               style={{
                 color:
-                  QUESTION_LIMIT - questions[selectedQuestion].question.length > 0 ?
-                    "black" : "#f12e2e"
+                  QUESTION_LIMIT - questions[selectedQuestion].question.length >
+                  0
+                    ? 'black'
+                    : '#f12e2e',
               }}
             >
               {QUESTION_LIMIT - questions[selectedQuestion].question.length}
@@ -197,16 +199,16 @@ const CreateQuiz = () => {
                 <p
                   className="dev-category-question-limit"
                   style={{
-                    color: REP_LIMIT - answer.length > 0 ? "black" : "#f12e2e"
+                    color: REP_LIMIT - answer.length > 0 ? 'black' : '#f12e2e',
                   }}
                 >
                   {REP_LIMIT - answer.length}
                 </p>
               </div>
             ))}
-            {questions[selectedQuestion].response.length < 6 &&
+            {questions[selectedQuestion].response.length < 6 && (
               <button onClick={() => onAddResponse()}> + </button>
-            }
+            )}
           </div>
         </div>
         <div className="dev-category-container">
@@ -234,8 +236,8 @@ const CreateQuiz = () => {
           src={IMGS['leftArrow']}
           alt="arrow-left"
           onClick={() =>
-            setSelectedQuestion(selectedQuestion - 1 < 0 ?
-              NB_QUESTIONS - 1 : selectedQuestion - 1
+            setSelectedQuestion(
+              selectedQuestion - 1 < 0 ? NB_QUESTIONS - 1 : selectedQuestion - 1
             )
           }
         />
@@ -243,14 +245,21 @@ const CreateQuiz = () => {
           className="arrow-right"
           src={IMGS['rightArrow']}
           alt="arrow-right"
-          onClick={() => setSelectedQuestion((selectedQuestion + 1) % NB_QUESTIONS)}
+          onClick={() =>
+            setSelectedQuestion((selectedQuestion + 1) % NB_QUESTIONS)
+          }
         />
       </div>
     )
   }
 
   const renderPage = () => {
-    return <div className="timer-container"> PAGE {selectedQuestion + 1}/{NB_QUESTIONS} </div>
+    return (
+      <div className="timer-container">
+        {' '}
+        PAGE {selectedQuestion + 1}/{NB_QUESTIONS}{' '}
+      </div>
+    )
   }
 
   const renderError = () => {
@@ -259,12 +268,11 @@ const CreateQuiz = () => {
 
   return (
     <>
-      {quizState === QUIZ_STATE["title"] && renderTitle()}
-      {quizState === QUIZ_STATE["questions"] && renderQuiz()}
-      {quizState === QUIZ_STATE["questions"] && renderArrows()}
-      {quizState === QUIZ_STATE["questions"] && renderPage()}
-      {(quizState === QUIZ_STATE["questions"] && error) && renderError()}
-
+      {quizState === QUIZ_STATE['title'] && renderTitle()}
+      {quizState === QUIZ_STATE['questions'] && renderQuiz()}
+      {quizState === QUIZ_STATE['questions'] && renderArrows()}
+      {quizState === QUIZ_STATE['questions'] && renderPage()}
+      {(quizState === QUIZ_STATE['questions'] && error) && renderError()}
     </>
   )
 }

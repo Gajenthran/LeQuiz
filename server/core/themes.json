@@ -1367,6 +1367,137 @@
           ]
         }
       ]
+    },
+    {
+      "name": "consoles nintendo",
+      "questions": [
+        {
+          "question": "Quel est la dernière console de jeu vidéo sortie par Nintendo ?",
+          "response": [
+            "switch",
+            "la switch",
+            "nintendo switch"
+          ],
+          "qcm": [
+            "switch",
+            "wii",
+            "gamecube",
+            "wii u"
+          ]
+        },
+        {
+          "question": "Dans quel pays se situe le siège social de Nintendo ?",
+          "response": [
+            "japon",
+            "kyoto"
+          ],
+          "qcm": [
+            "japon",
+            "corée du sud",
+            "chine",
+            "etats-unis"
+          ]
+        },
+        {
+          "question": "Quel est la console Nintendo la plus vendue ?",
+          "response": [
+            "nintendo ds",
+            "ds"
+          ],
+          "qcm": [
+            "ds",
+            "gamecube",
+            "gameboy",
+            "wii"
+          ]
+        },
+        {
+          "question": "Avant de se lancer dans les jeux vidéos, que produisait Nintendo ?",
+          "response": [
+            "hanafuda"
+          ],
+          "qcm": [
+            "hanafuda",
+            "uno",
+            "karuta",
+            "koi-koi"
+          ]
+        },
+        {
+          "question": "Quel est le nom du mode graphique permettant des procédés de zoom/rotation ?",
+          "response": [
+            "mode 7"
+          ],
+          "qcm": [
+            "mode 7",
+            "mode 3d",
+            "mode zoro",
+            "mode spec"
+          ]
+        },
+        {
+          "question": "Quel est le nom de code de la Gamecube ?",
+          "response": [
+            "dolphin"
+          ],
+          "qcm": [
+            "dolphin",
+            "shark",
+            "squid",
+            "whale"
+          ]
+        },
+        {
+          "question": "Comment se nomme la manette de la Wii u ?",
+          "response": [
+            "gamepad"
+          ],
+          "qcm": [
+            "gamepad",
+            "wiimote",
+            "joy-con",
+            "dualshock"
+          ]
+        },
+        {
+          "question": "Comment appelle-t-on les figurines Nintendo NFC sorties en 2014 ?",
+          "response": [
+            "amiibo"
+          ],
+          "qcm": [
+            "amiibo",
+            "pop",
+            "schleich",
+            "miitopia"
+          ]
+        },
+        {
+          "question": "Comment s'appelle la console sortie en 1995, reprenant le concept de VR ?",
+          "response": [
+            "virtual boy"
+          ],
+          "qcm": [
+            "virtual boy",
+            "3ds",
+            "game and watch",
+            "famicon"
+          ]
+        },
+        {
+          "question": "Qui est le créateur des consoles Game and Watch et Game Boy ?",
+          "response": [
+            "gunpei yokoi",
+            "gunpei",
+            "yokoi"
+          ],
+          "qcm": [
+            "gunpei yokoi",
+            "hiroshi yamauchi",
+            "fusajirō yamauchi",
+            "satoshi tajiri"
+          ]
+        }
+      ]
     }
   ]
 }

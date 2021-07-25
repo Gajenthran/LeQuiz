@@ -4,7 +4,6 @@ import './Dev.css'
 import CreateQuiz from './CreateQuiz'
 import SeeQuiz from './SeeQuiz'
 
-
 const Dev = () => {
   const [createQuiz, setCreateQuiz] = useState(false)
   const [seeQuiz, setSeeQuiz] = useState(false)
@@ -12,7 +11,7 @@ const Dev = () => {
   const onReturnHome = () => {
     setCreateQuiz(false)
     setSeeQuiz(false)
-    window.location = "/"
+    window.location = '/'
   }
 
   const onCreateQuiz = () => {
@@ -29,18 +28,27 @@ const Dev = () => {
     <>
       <div className="home-screen">
         <div className="div-home">
-          {(!createQuiz && !seeQuiz) &&
+          {!createQuiz && !seeQuiz && (
             <div className="home--container">
               <h3 className="home--title" onClick={() => onReturnHome()}>
                 Jijou-Quiz
-            </h3>
+              </h3>
               <div className="dev-options-container">
-                <div className="dev-btn" onClick={() => onCreateQuiz()}> CREER UN QUIZ </div>
-                <div className="dev-btn" onClick={() => onSeeQuiz()}> VISIONNER LES QUIZ </div>
-                <div className="dev-btn" onClick={() => onReturnHome()}> RETOUR </div>
+                <div className="dev-btn" onClick={() => onCreateQuiz()}>
+                  {' '}
+                  CREER UN QUIZ{' '}
+                </div>
+                <div className="dev-btn" onClick={() => onSeeQuiz()}>
+                  {' '}
+                  VISIONNER LES QUIZ{' '}
+                </div>
+                <div className="dev-btn" onClick={() => onReturnHome()}>
+                  {' '}
+                  RETOUR{' '}
+                </div>
               </div>
             </div>
-          }
+          )}
 
           {createQuiz && <CreateQuiz />}
           {seeQuiz && <SeeQuiz />}

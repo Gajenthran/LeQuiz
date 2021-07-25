@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import RangeSlider from 'react-bootstrap-range-slider'
+import Slider from 'rc-slider'
 
 import socket from './../../config/socket'
 
-import 'rc-slider/assets/index.css';
+import 'rc-slider/assets/index.css'
 
 import './Lobby.css'
+import { IMGS } from '../constants/images'
 
 /**
  * Lobby component to manage the game options and
@@ -32,7 +33,12 @@ const Lobby = ({ user, users }) => {
    */
   const startGame = () => {
     socket.emit('game:start', {
-      nbPlayer, nbQuiz, countdown, randomQuiz, streak, qcm
+      nbPlayer,
+      nbQuiz,
+      countdown,
+      randomQuiz,
+      streak,
+      qcm,
     })
   }
 
@@ -42,7 +48,7 @@ const Lobby = ({ user, users }) => {
     setInvitedMessage(true)
     setTimeout(() => {
       setInvitedMessage(false)
-    }, 2000);
+    }, 2000)
   }
 
   /**
@@ -53,22 +59,27 @@ const Lobby = ({ user, users }) => {
       <div className="lobby-users-list">
         <h3> JOUEURS - {users.length} </h3>
         <div className="lobby-users--list-row">
-          <div className="lobby-users--infos-list">
-            <div className="lobby-users--name">
-              <img src={user.img} alt="avatar" />
-              {user.name}
-            </div>
-          </div>
-          {users.map((user) =>
-            user.id !== socket.id && (
-              <div className="lobby-users--infos-list" key={user.id}>
-                <div className="lobby-users--name">
-                  <img src={user.img} alt="avatar" />
-                  {user.name}
+          {users.map((user, index) => (
+            <div className="lobby-users--infos-list" key={user.id}>
+              <div className="lobby-users--name">
+                <div className="lobby-users--avatar">
+                  {index === users.length - 1 && (
+                    <img
+                      src={IMGS['crown']}
+                      className="lobby-user-crown"
+                      alt="avatar"
+                    />
+                  )}
+                  <img
+                    src={user.img}
+                    className="lobby-user-avatar"
+                    alt="avatar"
+                  />
                 </div>
+                <p> {user.name} </p>
               </div>
-            )
-          )}
+            </div>
+          ))}
         </div>
       </div>
     )
@@ -84,29 +95,32 @@ const Lobby = ({ user, users }) => {
         <div className="lobby-users-options-list">
           <div className="lobby-users-options-element">
             <h6> JOUEURS max. dans une partie</h6>
-            <RangeSlider
+            <Slider
               min={4}
               max={6}
               value={nbPlayer}
-              onChange={(e) => setNbPlayer(Number(e.target.value))}
+              onChange={(v) => setNbPlayer(v)}
+              marks={{ 4: '4', 5: '5', 6: '6' }}
             />
           </div>
           <div className="lobby-users-options-element">
             <h6> nombre de quiz </h6>
-            <RangeSlider
+            <Slider
               min={users.length + 1}
               max={8}
               value={nbQuiz}
-              onChange={(e) => setNbQuiz(Number(e.target.value))}
+              onChange={(v) => setNbQuiz(v)}
+              marks={{ 4: '4', 6: '6', 8: '8' }}
             />
           </div>
           <div className="lobby-users-options-element">
             <h6> durée d'un quiz </h6>
-            <RangeSlider
-              min={10}
+            <Slider
+              min={45}
               max={150}
               value={countdown}
-              onChange={(e) => setCountdown(Number(e.target.value))}
+              onChange={(v) => setCountdown(v)}
+              marks={{ 45: '45', 60: '60', 120: '120', 150: '150' }}
             />
           </div>
           <div className="lobby-users-options-element">
@@ -117,7 +131,10 @@ const Lobby = ({ user, users }) => {
                 id="toggle-lobby-streak"
                 onClick={() => setStreak(!streak)}
               />
-              <label className="lobby-toggle-label" htmlFor="toggle-lobby-streak"></label>
+              <label
+                className="lobby-toggle-label"
+                htmlFor="toggle-lobby-streak"
+              ></label>
             </div>
           </div>
           <div className="lobby-users-options-element">
@@ -128,7 +145,10 @@ const Lobby = ({ user, users }) => {
                 id="toggle-lobby-random"
                 onClick={() => setRandomQuiz(!randomQuiz)}
               />
-              <label className="lobby-toggle-label" htmlFor="toggle-lobby-random"></label>
+              <label
+                className="lobby-toggle-label"
+                htmlFor="toggle-lobby-random"
+              ></label>
             </div>
           </div>
           <div className="lobby-users-options-element">
@@ -139,7 +159,10 @@ const Lobby = ({ user, users }) => {
                 id="toggle-lobby-qcm"
                 onClick={() => setQcm(!qcm)}
               />
-              <label className="lobby-toggle-label" htmlFor="toggle-lobby-qcm"></label>
+              <label
+                className="lobby-toggle-label"
+                htmlFor="toggle-lobby-qcm"
+              ></label>
             </div>
           </div>
         </div>
@@ -148,13 +171,13 @@ const Lobby = ({ user, users }) => {
   }
 
   const onReturnHome = () => {
-    window.location = "/"
+    window.location = '/'
   }
 
   return (
     <>
       <div className="lobby-screen">
-        {(user && users) ? (
+        {user && users ? (
           <div className="div-lobby">
             <h3 className="lobby--title" onClick={() => onReturnHome()}>
               Jijou-Quiz
@@ -168,7 +191,8 @@ const Lobby = ({ user, users }) => {
               <button onClick={(e) => startGame(e)}> LANCER LA PARTIE </button>
               <button
                 className="lobby--invite-btn"
-                onClick={(e) => copyToClipboard(e)}>
+                onClick={(e) => copyToClipboard(e)}
+              >
                 INVITER {invitedMessage && <span> copié </span>}
               </button>
             </div>

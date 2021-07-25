@@ -1,144 +1,146 @@
 .home-screen {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0.7turn, #6387d2, #6bccc8);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0.7turn, #6387d2, #6bccc8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .div-home {
-    margin: auto;
-    width: 60%;
-    height: 100%;
-    color: white;
-    margin: 30px;
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  color: white;
+  margin: 30px;
 }
 
 .home--container {
-    height: 100%;
-    color: white;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .home--container .home--title {
-    background: transparent;
-    border: 1px solid white;
-    font-family: 'squareo';
-    color: white;
-    padding: 10px;
-    box-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
-    position: absolute;
-    top: 5%;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  font-family: 'squareo';
+  color: white;
+  padding: 10px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 5%;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .div-home--avatar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    position: absolute;
-    top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  position: absolute;
+  top: 25%;
 }
 
 .div-home--avatar input {
-    background-color: white;
-    border: none;
-    padding: 10px 15px;
-    margin-bottom: 30px;
-    font-size: 18px;
-    outline: none;
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  outline: none;
 }
 
 .div-home--avatar button {
-    transition: 250ms;
-    width: 200px;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-    background-color: white;
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
-    cursor: pointer;
-    border: none;
-    color: black;
-    transform: rotateZ(-2deg);
-    font-size: 18px;
+  transition: 250ms;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  background-color: white;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  border: none;
+  color: black;
+  transform: rotateZ(-2deg);
+  font-size: 18px;
 }
 
 .div-home--avatar button:hover {
-    background: none;
-    border: 1px solid white;
-    color: white;
+  background: none;
+  border: 1px solid white;
+  color: white;
 }
 
 .div-home--avatar button:active {
-    transform: rotateZ(-2deg) scale(0.8);
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  transform: rotateZ(-2deg) scale(0.8);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
 
 .div-avatar {
-    position: relative;
+  position: relative;
 }
 
 .avatar-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    padding: 5px;
-    border: 3px solid white;
-    margin-bottom: 15px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 3px solid white;
+  margin-bottom: 15px;
 }
 
 .avatar-right-arrow {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    top: 79px;
-    right: -55px;
-    cursor: pointer;
-    transition: 250ms;
-    filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, .5));
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 79px;
+  right: -55px;
+  cursor: pointer;
+  transition: 250ms;
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5));
 }
 
 .avatar-left-arrow {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    top: 79px;
-    left: -55px;
-    cursor: pointer;
-    transition: 250ms;
-    filter: drop-shadow(-2px 2px 0 rgba(0, 0, 0, .5));
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 79px;
+  left: -55px;
+  cursor: pointer;
+  transition: 250ms;
+  filter: drop-shadow(-2px 2px 0 rgba(0, 0, 0, 0.5));
 }
 
-.avatar-right-arrow:hover, .avatar-left-arrow:hover {
-    transform: translateY(-5px);
+.avatar-right-arrow:hover,
+.avatar-left-arrow:hover {
+  transform: translateY(-5px);
 }
 
-.avatar-right-arrow:active, .avatar-left-arrow:active {
-    transform: translateY(5px);
-    filter: drop-shadow(0px 0px 0 rgba(0, 0, 0, .5));
+.avatar-right-arrow:active,
+.avatar-left-arrow:active {
+  transform: translateY(5px);
+  filter: drop-shadow(0px 0px 0 rgba(0, 0, 0, 0.5));
 }
 
 .home--footer {
-    display: flex;
-    position: absolute;
-    bottom: 10px;
+  display: flex;
+  position: absolute;
+  bottom: 10px;
 }
 
 .home--footer p {
-    margin: 5px;
-    color: white;
-    cursor: pointer;
+  margin: 5px;
+  color: white;
+  cursor: pointer;
 }

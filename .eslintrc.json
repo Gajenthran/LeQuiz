@@ -1,12 +1,13 @@
 {
     "env": {
+        "node": true,
         "browser": true,
+        "commonjs": true,
         "es2021": true
     },
     "extends": [
-        "plugin:react/recommended",
-        "standard",
-        "prettier"
+        "eslint:recommended",
+        "plugin:react/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -15,11 +16,16 @@
         "ecmaVersion": 12
     },
     "plugins": [
-        "react",
-        "prettier"
+        "react"
     ],
     "rules": {
-        "prettier/prettier": "error"
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ]
     }
 }
-  

@@ -24,12 +24,7 @@ const GAMESTATE = 2
  * @param {object} location - get query string
  */
 const Quiz = ({ location }) => {
-  const [gameState, setGameState] = useState({
-    gold: 0,
-    round: 1,
-    nbCards: 0,
-    deck: [],
-  })
+  const [gameState, setGameState] = useState({})
   const [users, setUsers] = useState([])
   const [user, setUser] = useState({})
   const [lobbyChecked, setLobbyChecked] = useState(false)
@@ -43,46 +38,47 @@ const Quiz = ({ location }) => {
     // Firefox
     if (document.mozFullScreenEnabled) {
       if (!document.mozFullScreenElement) {
-        elem.mozRequestFullScreen();
+        elem.mozRequestFullScreen()
       } else {
-        document.mozCancelFullScreen();
+        document.mozCancelFullScreen()
       }
     }
 
     if (document.fullscreenElement) {
       if (!document.fullscreenElement) {
-        elem.requestFullscreen();
+        elem.requestFullscreen()
       } else {
-        document.exitFullscreen();
+        document.exitFullscreen()
       }
     }
 
     // Safari
     if (document.webkitFullscreenEnabled) {
       if (!document.webkitFullscreenElement) {
-        elem.webkitRequestFullscreen();
+        elem.webkitRequestFullscreen()
       } else {
-        document.webkitExitFullscreen();
+        document.webkitExitFullscreen()
       }
     }
 
     // Edge
     if (document.msFullscreenEnabled) {
       if (!document.msFullscreenElement) {
-        elem.msRequestFullscreen();
+        elem.msRequestFullscreen()
       } else {
-        document.msExitFullscreen();
+        document.msExitFullscreen()
       }
     }
   }
 
   useEffect(() => {
     socket.on('lobby:create-response', ({ user }) => {
+      console.log(user)
       if (user === undefined || !(user.roomId || user.name))
         return <Redirect to="/" />
 
       setUser(user)
-      setUsers([user])
+      setUsers([...users, user])
       setPlayState(LOBBYSTATE)
     })
   })
@@ -125,10 +121,6 @@ const Quiz = ({ location }) => {
     }
   }, [location.search, lobbyChecked])
 
-
-  /**
-   * Create a new game.
-   */
   useEffect(() => {
     socket.on('game:new-game', ({ users, gameState, options }) => {
       setWinner(null)
@@ -165,10 +157,6 @@ const Quiz = ({ location }) => {
     })
   }, [])
 
-  /**
-   * Update game, by updating game state, checking if there is
-   * remaining user and duplicate card.
-   */
   useEffect(() => {
     socket.on('game:select-theme-response', ({ users, gameState }) => {
       setUser(users.find((u) => u.id === socket.id))
@@ -189,7 +177,7 @@ const Quiz = ({ location }) => {
           ...prevGameState,
           ...gameState,
         }))
-      }, 1000);
+      }, 1000)
     })
   }, [])
 
@@ -202,28 +190,22 @@ const Quiz = ({ location }) => {
           ...prevGameState,
           ...gameState,
         }))
-      }, 1000);
+      }, 1000)
     })
   }, [])
 
-  /**
-   * Go to the top of the screen.
-   */
   useEffect(() => {
     socket.on('game:return-lobby-response', () => {
       setPlayState(LOBBYSTATE)
     })
   }, [])
 
-  /**
-   * End the game. Show the rank.
-   */
   useEffect(() => {
     socket.on('game:end-game', ({ users }) => {
       setTimeout(() => {
         setUsers(users)
         setWinner(users[0])
-      }, 500);
+      }, 500)
     })
   }, [])
 
@@ -242,17 +224,15 @@ const Quiz = ({ location }) => {
       ) : (
         <Game
           socket={socket}
-          user={user}
-          gameState={gameState}
           users={users}
-          nbRound={options.nbRound}
+          gameState={gameState}
           onFullscreen={onFullscreen}
           winner={winner}
           options={options}
         />
       )}
     </>
-  );
+  )
 }
 
 export default Quiz

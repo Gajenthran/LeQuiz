@@ -123,7 +123,7 @@ const Game = ({ socket, users, gameState, onFullscreen, winner, options }) => {
   }, [socket])
 
   useEffect(() => {
-    socket.on('game:select-theme-response', ({ gameState, selectedIndex }) => {
+    socket.on('game:select-theme-response', ({ selectedIndex }) => {
       setCounterActive(true)
       setSelectedTheme(selectedIndex)
 
@@ -245,10 +245,7 @@ const Game = ({ socket, users, gameState, onFullscreen, winner, options }) => {
 
   const renderWinner = () => {
     return (
-      <div
-        className={'bg-winner'}
-        style={{ animation: 'bg-color 1.5s linear' }}
-      >
+      <div className="bg-winner">
         <div
           className="winner-container"
           style={{ animation: 'popup-scale 1.2s linear' }}

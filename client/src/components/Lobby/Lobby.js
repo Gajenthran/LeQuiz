@@ -8,15 +8,6 @@ import 'rc-slider/assets/index.css'
 import './Lobby.css'
 import { IMGS } from '../constants/images'
 
-/**
- * Lobby component to manage the game options and
- * start the game.
- *
- * @param {object} lobbyUsers - lobby users
- * @param {string} [lobbyUsers.name] - username
- * @param {string} [lobbyUsers.room] - user room
- * @param {array} users - others users in the room
- */
 const Lobby = ({ user, users }) => {
   const [nbPlayer, setNbPlayer] = useState(users.length || 4)
   const [nbQuiz, setNbQuiz] = useState(users.length + 1)
@@ -180,7 +171,7 @@ const Lobby = ({ user, users }) => {
         {user && users ? (
           <div className="div-lobby">
             <h3 className="lobby--title" onClick={() => onReturnHome()}>
-              Jijou-Quiz
+              le-quiz
             </h3>
             <div className="lobby--container">
               {renderOptions()}

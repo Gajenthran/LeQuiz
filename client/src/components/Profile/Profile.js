@@ -88,7 +88,7 @@ const Profile = ({ location }) => {
         <div className="div-home">
           <div className="home--container">
             <h3 className="home--title" onClick={() => onReturnHome()}>
-              Jijou-Quiz
+              LE-QUIZ
             </h3>
             {renderAvatar()}
             {renderFooter()}

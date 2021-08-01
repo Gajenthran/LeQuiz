@@ -338,7 +338,7 @@
           ]
         },
         {
-          "question": "Par qui Tonks a-t-elle été formée au métier d'Auror",
+          "question": "Par qui Tonks a-t-elle été formée au métier d'Auror ?",
           "response": [
             "fol-oeil",
             "fol oeil",
@@ -423,7 +423,7 @@
       ]
     },
     {
-      "name": "Maths Collège",
+      "name": "maths Collège",
       "questions": [
         {
           "question": "2 + 2 * 2 = ?",
@@ -491,7 +491,7 @@
           ]
         },
         {
-          "question": "Ecrire 777 en lettres",
+          "question": "Ecrire 777 en lettres.",
           "response": [
             "sept cent soixante-dix-sept"
           ],
@@ -529,7 +529,7 @@
           ]
         },
         {
-          "question": "Que vaut \"x\" dans l'expression: -5x + 6 = 1 ? ",
+          "question": "Que vaut \"x\" dans l'expression: -5x + 6 = 1 ?",
           "response": [
             "1",
             "un"
@@ -557,7 +557,7 @@
       ]
     },
     {
-      "name": "Alphabet",
+      "name": "alphabet",
       "questions": [
         {
           "question": "Quel est la première lettre de l'alphabet français ?",
@@ -786,7 +786,7 @@
           ]
         },
         {
-          "question": "Quel est la capitale du Sri Lanka",
+          "question": "Quel est la capitale du Sri Lanka ?",
           "response": [
             "sri jayawardenapura kotte"
           ],
@@ -928,7 +928,7 @@
           ]
         },
         {
-          "question": "Combien y a-t-il de sons dans \"LMF\" de Freeze Corleone?",
+          "question": "Combien y a-t-il de sons dans \"LMF\" de Freeze Corleone ?",
           "response": [
             "17",
             "dix sept",
@@ -942,7 +942,7 @@
           ]
         },
         {
-          "question": "Selon SNEP, quel est le 2ème titre de rap le plus écouté de l'année 2020 en France?",
+          "question": "Selon SNEP, quel est le 2ème titre de rap le plus écouté de l'année 2020 en France ?",
           "response": [
             "angela"
           ],
@@ -1021,7 +1021,7 @@
           ]
         },
         {
-          "question": "\"On se disait pour la vie, ... \" Habibi (Kendji Girac)",
+          "question": "\"On se disait pour la vie, ... \" - Habibi (Kendji Girac)",
           "response": [
             "j'ai jure, t'as promis",
             "j'ai jure, tu as promis"
@@ -1047,7 +1047,7 @@
           ]
         },
         {
-          "question": "\"J'arrive lourd comme 10 grizzlis, ... \" - DRILL FR4 (GAZO x Freeze Corleone) ?",
+          "question": "\"J'arrive lourd comme 10 grizzlis, ... \" - DRILL FR4 (GAZO x Freeze Corleone)",
           "response": [
             "il m'faut un salaire comme si j'joue chez les grizzlies",
             "il me faut un salaire comme si je joue chez les grizzlies",
@@ -1093,7 +1093,7 @@
       ]
     },
     {
-      "name": "Inventeurs et inventions",
+      "name": "inventeurs et inventions",
       "questions": [
         {
           "question": "Quel scientifique anglais a développé la loi universelle de la gravitation ?",
@@ -1176,7 +1176,7 @@
           ]
         },
         {
-          "question": "En quelle année se déroue la première édition de la coupe du monde ?",
+          "question": "En quelle année se déroule la première édition de la coupe du monde ?",
           "response": [
             "1930",
             "1928"
@@ -1195,10 +1195,10 @@
             "oppenheimer"
           ],
           "qcm": [
-            "Oppenheimer",
-            "Einstein",
-            "Joliot-Curie",
-            "Halban"
+            "oppenheimer",
+            "einstein",
+            "joliot-curie",
+            "halban"
           ]
         },
         {
@@ -1211,7 +1211,7 @@
             "wii",
             "dreamcast",
             "ps3",
-            "xbox"
+            "xbox 360"
           ]
         },
         {
@@ -1221,10 +1221,10 @@
             "kariko"
           ],
           "qcm": [
-            "Katalin Kariko",
-            "Antoine Lavoisier",
-            "Yves Chauvin",
-            "Louis Pasteur"
+            "katalin kariko",
+            "antoine lavoisier",
+            "yves chauvin",
+            "louis pasteur"
           ]
         }
       ]
@@ -1255,7 +1255,7 @@
           "qcm": [
             "robert de niro",
             "will smith",
-            "Anthony Hopkins",
+            "anthony hopkins",
             "Al Pacino"
           ]
         },
@@ -1289,13 +1289,27 @@
           "question": "Quel rappeur dit \"Les hommes mentent mais pas les chiffres\" ?",
           "response": [
             "booba",
+            "kaaris",
             "mark twain"
           ],
           "qcm": [
-            "booba",
+            "rohff",
             "kaaris",
             "la fouine",
             "damso"
+          ]
+        },
+        {
+          "question": "Qui dit \"la télé, c'est que de la télé\" ?",
+          "response": [
+            "cyril hanouna",
+            "hanouna"
+          ],
+          "qcm": [
+            "cyril hanouna",
+            "cyril feraud",
+            "arthur",
+            "olivier minne"
           ]
         },
         {
@@ -1306,9 +1320,9 @@
           ],
           "qcm": [
             "karl marx",
-            "Alain Houziaux",
+            "alain houziaux",
             "emmanuel kant",
-            "Hegel"
+            "hegel"
           ]
         },
         {
@@ -1321,7 +1335,7 @@
           "qcm": [
             "zlatan ibrahimovic",
             "jeff bezos",
-            "tim cook",
+            "donald trump",
             "steve wozniak"
           ]
         },
@@ -1337,19 +1351,6 @@
             "akainu",
             "netero",
             "gohan"
-          ]
-        },
-        {
-          "question": "Qui dit \"la télé, c'est que de la télé\" ?",
-          "response": [
-            "cyril hanouna",
-            "hanouna"
-          ],
-          "qcm": [
-            "cyril hanouna",
-            "cyril feraud",
-            "arthur",
-            "olivier minne"
           ]
         },
         {
@@ -1495,6 +1496,550 @@
             "hiroshi yamauchi",
             "fusajirō yamauchi",
             "satoshi tajiri"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bd et animation",
+      "questions": [
+        {
+          "question": "Comment s'appelle la soeur de titeuf ?",
+          "response": [
+            "zizie",
+            "zizi"
+          ],
+          "qcm": [
+            "zizie",
+            "fifie",
+            "cazie",
+            "sophie"
+          ]
+        },
+        {
+          "question": "Qui est l'ennemi de l'inspecteur gadget ?",
+          "response": [
+            "docteur gang",
+            "dr gang",
+            "dr. gang",
+            "doctor claw",
+            "gang"
+          ],
+          "qcm": [
+            "docteur gang",
+            "docteur gartien",
+            "docteur gadget",
+            "docteur cop"
+          ]
+        },
+        {
+          "question": "Comment s'appelle la toupie de tyson, le personnage principal de beyblade ?",
+          "response": [
+            "storm pegasus",
+            "pegasus"
+          ],
+          "qcm": [
+            "dragoon",
+            "storm pegasus",
+            "valtryek",
+            "rock leone"
+          ]
+        },
+        {
+          "question": "De quel race est milou dans les aventures de tintin ?",
+          "response": [
+            "fox-terrier a poil dur"
+          ],
+          "qcm": [
+            "fox-terrier à poil dur",
+            "jack russell à poil long",
+            "cocker",
+            "chihuahua"
+          ]
+        },
+        {
+          "question": "En quelle année est né le personnage de bécassine ?",
+          "response": [
+            "1905"
+          ],
+          "qcm": [
+            "1905",
+            "1915",
+            "1944",
+            "1953"
+          ]
+        },
+        {
+          "question": "Quel est le prénom du capitaine Haddock ?",
+          "response": [
+            "archibald"
+          ],
+          "qcm": [
+            "pacome",
+            "archibald",
+            "dieudonné",
+            "herge"
+          ]
+        },
+        {
+          "question": "Dans quel lycée étudient Sam, Alex et Clover dans Totally Spies ?",
+          "response": [
+            "beverly high",
+            "beverly hills high"
+          ],
+          "qcm": [
+            "beverly high",
+            "beverly hills",
+            "beverly place",
+            "beverly dile"
+          ]
+        },
+        {
+          "question": "Comment se nomme le chef du village d'asterix et obelisk ?",
+          "response": [
+            "abraracourcix"
+          ],
+          "qcm": [
+            "abraracourcix",
+            "panoramix",
+            "agecanonix",
+            "grossebaf"
+          ]
+        },
+        {
+          "question": "Dans quel bd apparaît pour la première fois Donna Troy, la soeur de Wonder Woman ?",
+          "response": [
+            "the brave and the bold"
+          ],
+          "qcm": [
+            "the brave and the bold",
+            "hour of adventure",
+            "strange sports stories",
+            "the outsiders"
+          ]
+        },
+        {
+          "question": "Dans \"Kodo le tyran\" de Spirou, quel animal tombe amoureux de Spip ?",
+          "response": [
+            "une tortue",
+            "tortue"
+          ],
+          "qcm": [
+            "tortue",
+            "fouine",
+            "ecureuil",
+            "souris"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "marvel et dc",
+      "questions": [
+        {
+          "question": "Quel super-héros Marvel est directement inspiré de la mythologie nordique ?",
+          "response": [
+            "thor"
+          ],
+          "qcm": [
+            "thor",
+            "iron man",
+            "deadpool",
+            "wolverine"
+          ]
+        },
+        {
+          "question": "Dans Infinity War, quel antagoniste menace de supprimer la moitié des habitants du monde ?",
+          "response": [
+            "thanos"
+          ],
+          "qcm": [
+            "thanos",
+            "loki",
+            "modok",
+            "joker"
+          ]
+        },
+        {
+          "question": "Quel est le nom civil de Batman ?",
+          "response": [
+            "bruce wayne"
+          ],
+          "qcm": [
+            "bruce wayne",
+            "clark kent",
+            "peter parker",
+            "tony stark"
+          ]
+        },
+        {
+          "question": "Quel héros Marvel est connu sous le nom de Matt Murdock ?",
+          "response": [
+            "daredevil",
+            "dardevil"
+          ],
+          "qcm": [
+            "daredevil",
+            "deadpool",
+            "ant-man",
+            "punisher"
+          ]
+        },
+        {
+          "question": "Qui a réalisé les films Man of Steel et Batman VS Superman (nom complet) ?",
+          "response": [
+            "zack snyder"
+          ],
+          "qcm": [
+            "zack snyder",
+            "christopher nolan",
+            "peyton reed",
+            "matt reeves"
+          ]
+        },
+        {
+          "question": "De quel pays fictif, Black Panther est-il le souverain ?",
+          "response": [
+            "wakanda"
+          ],
+          "qcm": [
+            "wakanda",
+            "botswanga",
+            "zamunda",
+            "sao rico"
+          ]
+        },
+        {
+          "question": "Sur quelle planète est né Superman ?",
+          "response": [
+            "krypton",
+            "kripton"
+          ],
+          "qcm": [
+            "krypton",
+            "terre",
+            "dune",
+            "terminus"
+          ]
+        },
+        {
+          "question": "Comment se nomme la relique renfermant la pierre du temps dans Marvel ?",
+          "response": [
+            "l'œil d'agamotto",
+            "l'oeil d'agamotto",
+            "œil d'agamotto",
+            "oeil d'agamotto"
+          ],
+          "qcm": [
+            "l'oeil d'agamotto",
+            "l'amulette du pouvoir",
+            "le collier de bodil",
+            "la corne de protée"
+          ]
+        },
+        {
+          "question": "Dans quelle ville est né Iron Man ?",
+          "response": [
+            "sofia",
+            "a sofia"
+          ],
+          "qcm": [
+            "sofia",
+            "new york",
+            "hanoi",
+            "kaboul"
+          ]
+        },
+        {
+          "question": "Qui est le chef de la ligue des assassins au début de l'univers de dc ?",
+          "response": [
+            "ra's al ghul"
+          ],
+          "qcm": [
+            "ra's al ghul",
+            "oliver queen",
+            "malcolm merlyn",
+            "deathstroke"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "animes et mangas",
+      "questions": [
+        {
+          "question": "Dans quel manga retrouve-t-on Light Yagami écrivant le nom de criminels dans un livre ?",
+          "response": [
+            "death note"
+          ],
+          "qcm": [
+            "death note",
+            "dragon ball",
+            "my hero academia",
+            "psycho pass"
+          ]
+        },
+        {
+          "question": "Comment se nomme la deuxième partie de Naruto, sortie en 2007 ?",
+          "response": [
+            "shippuden",
+            "naruto shippuden"
+          ],
+          "qcm": [
+            "shippuden",
+            "boruto",
+            "akkipuden",
+            "road to ninja"
+          ]
+        },
+        {
+          "question": "Comment s'appelle le personnage principal de My Hero Academia ?",
+          "response": [
+            "izuku midoriya",
+            "midoriya",
+            "izuku",
+            "deku",
+            "izuku-might"
+
+          ],
+          "qcm": [
+            "izuku midoriya",
+            "shoyo hinata",
+            "monkey d. luffy",
+            "all might"
+          ]
+        },
+        {
+          "question": "Dans Golderack, comme se nomme le prince héritier de la planète d'Euphor ?",
+          "response": [
+            "actarus"
+          ],
+          "qcm": [
+            "actarus",
+            "alcor",
+            "procyon",
+            "rigel"
+          ]
+        },
+        {
+          "question": "Quel est le nom du tatouage porté par les homonculus dans full metal alchemist ?",
+          "response": [
+            "ouroboros"
+          ],
+          "qcm": [
+            "ouroboros",
+            "zeichnungen",
+            "locket",
+            "cataphractus"
+          ]
+        },
+        {
+          "question": "Quel sport est à l'honneur dans le manga Haikyu!! ?",
+          "response": [
+            "volley-ball",
+            "volley ball",
+            "volleyball"
+          ],
+          "qcm": [
+            "volley-ball",
+            "basketball",
+            "football américain",
+            "badminton"
+          ]
+        },
+        {
+          "question": "Dans SNK, quelle partie du corps des Titans présente leur unique faiblesse connue à ce jour ?",
+          "response": [
+            "la nuque",
+            "nuque"
+          ],
+          "qcm": [
+            "la nuque",
+            "le genou droit",
+            "l'oeil",
+            "le talon"
+          ]
+        },
+        {
+          "question": "À quel (numéro de) flotte, d'Edward Newgate, Marshall D. Teach appartenait-il ?",
+          "response": [
+            "2",
+            "deux",
+            "deuxième flotte"
+          ],
+          "qcm": [
+            "2",
+            "1",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "question": "Quel est le nom du teigu de Mine dans Akame ga Kill ?",
+          "response": [
+            "artillerie romaine: pumpkin",
+            "artillerie romaine pumpkin",
+            "pumpkin"
+          ],
+          "qcm": [
+            "pumpkin",
+            "arcnufot",
+            "balzac",
+            "murasame"
+          ]
+        },
+        {
+          "question": "Dans DBZ, comment se nomme la réincarnation humaine de Majin Boo ?",
+          "response": [
+            "oob",
+            "uub",
+            "ubu"
+
+          ],
+          "qcm": [
+            "oob",
+            "freezer",
+            "granola",
+            "cell"
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "meme et buzz",
+      "questions": [
+        {
+          "question": "De qui est né l'expression les \"moins de 10\" ?",
+          "response": [
+            "greg guillotin",
+            "louis vignac"
+          ],
+          "qcm": [
+            "greg guillotin",
+            "mister v",
+            "norman",
+            "cyril hanouna"
+          ]
+        },
+        {
+          "question": "Complétez la phrase. \"8 morts, 6 blessés, je pète ma bière ...\"",
+          "response": [
+            "ma libellule"
+          ],
+          "qcm": [
+            "ma libellule",
+            "ma chérie",
+            "avec 4 vivants ",
+            "et toi ?"
+          ]
+        },
+        {
+          "question": "Quel célèbre chef cuisinier se fait connaître grâce à sa manière de saupoudrer le sel ?",
+          "response": [
+            "salt bae",
+            "nusret gokce"
+
+          ],
+          "qcm": [
+            "salt bae",
+            "cyril lignac",
+            "diego alary",
+            "fastgoodcuisine"
+          ]
+        },
+        {
+          "question": "Quel est le véritable nom d'el risitas, devenu meme grâce à son rire ?",
+          "response": [
+            "juan joya borja",
+            "juan borja"
+
+          ],
+          "qcm": [
+            "juan joya borja",
+            "jesus rodríguez quintero",
+            "santiago segura silva",
+            "abdel fattah al-sissi"
+          ]
+        },
+        {
+          "question": "De quel série vient le célèbre meme \"shut up take my money\" ?",
+          "response": [
+            "futurama"
+          ],
+          "qcm": [
+            "futurama",
+            "simpson",
+            "south park",
+            "rick et morty"
+          ]
+        },
+        {
+          "question": "Comment se nomme dans le sketch, l'émission où l'on retrouve \"D. la réponse D\" de Gad Elmaleh ?",
+          "response": [
+            "qui veut gagner de l'argent en masse ?",
+            "qui veut gagner de l'argent en masse"
+          ],
+          "qcm": [
+            "qui veut gagner de l'argent en masse ?",
+            "touche pas à mon argent",
+            "une famille en plomb",
+            "fort boyaux"
+          ]
+        },
+        {
+          "question": "Comment se nomme la chanson de Baauer, de 2013, qui a fait le buzz avec des danses loufoques ?",
+          "response": [
+            "harlem shake"
+          ],
+          "qcm": [
+            "harlem shake",
+            "buss it",
+            "wap dance",
+            "blinding lights"
+          ]
+        },
+        {
+          "question": "Comment s'appelle le célèbre tiktokeur sénégalais qui pointe sarcastiquement les DIY ?",
+          "response": [
+            "khaby lame",
+            "khabane lame"
+          ],
+          "qcm": [
+            "khaby lame",
+            "zach king",
+            "czn burak",
+            "james charles"
+          ]
+        },
+        {
+          "question": "Quel adolescent a popularisé le mouvement de danse floss ?",
+          "response": [
+            "russell horning",
+            "backpack kid"
+          ],
+          "qcm": [
+            "russell horning",
+            "jacob sartorius",
+            "gaten matarazzo",
+            "roy purdy"
+          ]
+        },
+        {
+          "question": "Quel loi prouve que le jeu \"The floor is lava\" n'est pas jouable dans la vraie vie ?",
+          "response": [
+            "la loi de stefan–boltzmann",
+            "loi de stefan–boltzmann",
+            "stefan–boltzmann",
+            "la loi de stefan",
+            "loi de stefan",
+            "stefan"
+          ],
+          "qcm": [
+            "loi de stefan–boltzmann",
+            "loi de planck",
+            "loi du rayonnement de wien",
+            "loi de rayleigh-jeans"
           ]
         }
       ]

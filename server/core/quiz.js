@@ -229,12 +229,12 @@ class Ginho {
     }
 
     game.selectTheme(selectedIndex, streak)
-    const gameState = game.getGameState()
-    const users = game.getUsers()
+    const { currentTheme, doneThemes, turnStreak, theme, answers } =
+      game.getGameState()
 
     io.to(user.room).emit("game:select-theme-response", {
-      users,
-      gameState,
+      users: game.getUsers(),
+      gameState: { currentTheme, doneThemes, turnStreak, theme, answers },
       selectedIndex,
     })
 

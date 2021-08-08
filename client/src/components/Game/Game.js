@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react'
 import CountUp from 'react-countup'
 import { Progress } from 'react-sweet-progress'
 import 'react-sweet-progress/lib/style.css'
+import Sound from 'react-sound'
 
 import './Game.css'
 
 import { IMGS } from './../constants/images'
+import { SOUNDS } from './../constants/sounds'
 
 const CorrectBox = ({ checked, value, opacity }) => {
   return (
@@ -480,6 +482,19 @@ const Game = ({ socket, users, gameState, onFullscreen, winner, options }) => {
             )}
           </div>
         )}
+
+        {options.qcm && selectedQCM === response ? (
+          <Sound url={SOUNDS['correct']} playStatus={Sound.status.PLAYING} />
+        ) : options.qcm && selectedQCM !== -1 && selectedQCM !== response ? (
+          answers[currentQuestion] === -1 ? (
+            <Sound url={SOUNDS['wrong']} playStatus={Sound.status.PLAYING} />
+          ) : (
+            <Sound
+              url={SOUNDS['secondWrong']}
+              playStatus={Sound.status.PLAYING}
+            />
+          )
+        ) : null}
       </div>
     )
   }

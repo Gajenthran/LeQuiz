@@ -1494,7 +1494,7 @@
           "qcm": [
             "gunpei yokoi",
             "hiroshi yamauchi",
-            "fusajirō yamauchi",
+            "fusajiro yamauchi",
             "satoshi tajiri"
           ]
         }
@@ -1905,7 +1905,6 @@
         }
       ]
     },
-
     {
       "name": "meme et buzz",
       "questions": [
@@ -1930,7 +1929,7 @@
           "qcm": [
             "ma libellule",
             "ma chérie",
-            "avec 4 vivants ",
+            "avec 4 vivants",
             "et toi ?"
           ]
         },
@@ -2040,6 +2039,532 @@
             "loi de planck",
             "loi du rayonnement de wien",
             "loi de rayleigh-jeans"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "singes célèbres",
+      "questions": [
+        {
+          "question": "Comment se nomme le singe qui accompagne Dora ?",
+          "response": [
+            "babouche"
+          ],
+          "qcm": [
+            "babouche",
+            "chipeur",
+            "diego",
+            "king kong"
+          ]
+        },
+        {
+          "question": "Quel est le nom du ventriloque formant un duo avec sa marionette nommée Jean-Marc ?",
+          "response": [
+            "jeff panacloc",
+            "damien colcanap"
+          ],
+          "qcm": [
+            "jeff panacloc",
+            "jeff dunham",
+            "marc métral",
+            "david-michel"
+          ]
+        },
+        {
+          "question": "Quel entreprise multinationale a mis en lumière le personnage de Donkey Kong ?",
+          "response": [
+            "nintendo"
+          ],
+          "qcm": [
+            "nintendo",
+            "sony",
+            "sega",
+            "microsoft"
+          ]
+        },
+        {
+          "question": "Comment s'appelle l'orang-outan présent dans le livre de la jungle ?",
+          "response": [
+            "king louie",
+            "roi louie",
+            "louie"
+          ],
+          "qcm": [
+            "roi louie",
+            "shere khan",
+            "tabaqui",
+            "colonel hathi"
+          ]
+        },
+        {
+          "question": "Dans l'hindouisme, qui est le dieu-singe, héros du Ramayana, qui raconte le périple de rama ?",
+          "response": [
+            "hanuman"
+          ],
+          "qcm": [
+            "hanuman",
+            "brahma",
+            "vishnu",
+            "shiva"
+          ]
+        },
+        {
+          "question": "Sur quel île réside King Kong ?",
+          "response": [
+            "skull island",
+            "ile du crane"
+          ],
+          "qcm": [
+            "skull island",
+            "shutter island",
+            "cascara",
+            "dryland"
+          ]
+        },
+        {
+          "question": "Comment s'appelle le capucin de Ross dans Friends ?",
+          "response": [
+            "marcel"
+          ],
+          "qcm": [
+            "marcel",
+            "kiki",
+            "magilla",
+            "darwin"
+          ]
+        },
+        {
+          "question": "Dans pirates des caraibes, qui est le premier maître du capucin Jack ?",
+          "response": [
+            "hector barbossa",
+            "barbossa"
+          ],
+          "qcm": [
+            "hector barbossa",
+            "jack sparrow",
+            "william turner",
+            "calypso"
+          ]
+        },
+        {
+          "question": "Quand est sorti le film \"La Planète des singes: L'Affrontement\" ?",
+          "response": [
+            "2014"
+          ],
+          "qcm": [
+            "2014",
+            "2012",
+            "2015",
+            "2017"
+          ]
+        },
+        {
+          "question": "Où vit Rafiki dans le roi lion ?",
+          "response": [
+            "baobab",
+            "arbre",
+            "adansonia"
+          ],
+          "qcm": [
+            "adansonia",
+            "quercus",
+            "fagus",
+            "castanea"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "batailles historiques",
+      "questions": [
+        {
+          "question": "Quelle femme française, participant à de nombreuses batailles, est surnommée la pucelle d'orléans ?",
+          "response": [
+            "jeanne d'arc"
+          ],
+          "qcm": [
+            "jeanne d'arc",
+            "isabelle rommée",
+            "alexandra kollontai",
+            "sophie de prusse"
+          ]
+        },
+        {
+          "question": "Au moyen age, comment appelle-t-on une expédition pour pouvoir mener le pèlerinage des chrétiens en Terre sainte ?",
+          "response": [
+            "croisade"
+          ],
+          "qcm": [
+            "croisade",
+            "incursion",
+            "nuit de cristal",
+            "bain de foule"
+          ]
+        },
+        {
+          "question": "Qui menait le peuple gaullois face à Jules César pendant le siège d'Alésia ?",
+          "response": [
+            "vercingetorix"
+          ],
+          "qcm": [
+            "vercingetorix",
+            "clovis",
+            "cleopatre",
+            "celtillos"
+          ]
+        },
+        {
+          "question": "Quelle bataille marqua la fin de la guerre d'Indochine, en 1954 ?",
+          "response": [
+            "bataille de dien bien phu",
+            "dien bien phu"
+          ],
+          "qcm": [
+            "bataille de dien bien phu",
+            "bataille de koursk",
+            "bataille de mao khe",
+            "Bataille de na san"
+          ]
+        },
+        {
+          "question": "Qui dirigeait les troupes françaises durant la bataille de Poitiers en 732 ?",
+          "response": [
+            "charles martel",
+            "martel"
+          ],
+          "qcm": [
+            "charles martel",
+            "philippe II auguste",
+            "bertrand du guesclin",
+            "lazare carnot"
+          ]
+        },
+        {
+          "question": "Quelle bataille est représentée dans le film \"300\" de Zack Snyder ?",
+          "response": [
+            "bataille des thermopyles",
+            "thermopyles",
+            "des thermopyles"
+          ],
+          "qcm": [
+            "bataille des thermopyles",
+            "bataille de l'artémision",
+            "bataille de l'eurymédon",
+            "bataille du cap mycale"
+          ]
+        },
+        {
+          "question": "En quelle année se déroule la bataille de Verdun ?",
+          "response": [
+            "1916"
+          ],
+          "qcm": [
+            "1916",
+            "1917",
+            "1914",
+            "1915"
+          ]
+        },
+        {
+          "question": "Dans quel pays se déroule la bataille de Waterloo, en 1815 ?",
+          "response": [
+            "belgique"
+          ],
+          "qcm": [
+            "belgique",
+            "autriche",
+            "royaume de prusse",
+            "royaume-uni"
+          ]
+        },
+        {
+          "question": "Quelle bataille a été le tournant de la guerre dans le Pacifique, arrêtant l'expansion japonaise ?",
+          "response": [
+            "la bataille de midway",
+            "bataille de midway",
+            "midway"
+          ],
+          "qcm": [
+            "bataille de midway",
+            "bataille de l'atoll de wake",
+            "bataille de khalkhin gol",
+            "bataille de wuhan"
+          ]
+        },
+        {
+          "question": "Combien de temps a duré la bataille de Stalingrad ?",
+          "response": [
+            "6 mois",
+            "7 mois"
+          ],
+          "qcm": [
+            "7 mois",
+            "8 mois",
+            "2 mois",
+            "5 mois"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "langue française",
+      "questions": [
+        {
+          "question": "Conjuguer le verbe \"manger\" au présent de l'indicatif, à la 1ère personne du pluriel",
+          "response": [
+            "nous mangeons"
+          ],
+          "qcm": [
+            "nous mangeons",
+            "je mange",
+            "vous mangez",
+            "il mange"
+          ]
+        },
+        {
+          "question": "Dans la phrase \"Il l'avait tué.\", écrire le verbe conjugé à l'infinitif",
+          "response": [
+            "tuer"
+          ],
+          "qcm": [
+            "tuer",
+            "avoir",
+            "avait tuer",
+            "avoir tuer"
+          ]
+        },
+        {
+          "question": "Compléter la phrase suivante: \"Pierre qui roule...\"",
+          "response": [
+            "n'amasse pas mousse"
+          ],
+          "qcm": [
+            "n'amasse pas mousse",
+            "n'a masse pas mousse",
+            "n'a pas de mousse",
+            "amasse pas de mousse"
+          ]
+        },
+        {
+          "question": "Comment appelle-t-on une figure dans laquelle les contraires s’opposent en symétrie dans une forme AB-BA ?",
+          "response": [
+            "chiasme"
+          ],
+          "qcm": [
+            "chiasme",
+            "antithèse",
+            "oxymore",
+            "ironie"
+          ]
+        },
+        {
+          "question": "Dans la phrase, \"J'envoie une lettre à Lee.\", quelle est la fonction de \"à Lee\" ?",
+          "response": [
+            "cos",
+            "complement d'objet second"
+          ],
+          "qcm": [
+            "complement d'objet second",
+            "complement circonstanciel",
+            "nom propre",
+            "sujet"
+          ]
+        },
+        {
+          "question": "Comment appelle-t-on un mot pouvant se lire de gauche à droite et inversement (ex. Kayak) ?",
+          "response": [
+            "palindrome"
+          ],
+          "qcm": [
+            "palindrome",
+            "pangramme",
+            "anagramme",
+            "lipogramme"
+          ]
+        },
+        {
+          "question": "Quel est le genre du mot \"omoplate\" ?",
+          "response": [
+            "feminin"
+          ],
+          "qcm": [
+            "feminin",
+            "masculin",
+            "singulier",
+            "pluriel"
+          ]
+        },
+        {
+          "question": "Comment appelle-t-on un poème de deux quatrains et deux tercets ?",
+          "response": [
+            "sonnet"
+          ],
+          "qcm": [
+            "sonnet",
+            "prose",
+            "rondeau",
+            "blason"
+          ]
+        },
+        {
+          "question": "Donner un synonyme du mot \"lucaniste\" ?",
+          "response": [
+            "cerf-voliste",
+            "cervoliste"
+          ],
+          "qcm": [
+            "cervoliste",
+            "philatelie",
+            "maquillage",
+            "confidentiel"
+          ]
+        },
+        {
+          "question": "Quel est le roman en lipogramme écrit par Georges Perec en 1968 ?",
+          "response": [
+            "la disparition"
+          ],
+          "qcm": [
+            "la disparition",
+            "w ou le souvenir d'enfance",
+            "le revenant",
+            "le condottiere "
+          ]
+        }
+      ]
+    },
+    {
+      "name": "histoire de france (< 1945)",
+      "questions": [
+        {
+          "question": "Qui conquit la Gaule au début du 6e siècle et fit de Paris sa capitale ?",
+          "response": [
+            "clovis"
+          ],
+          "qcm": [
+            "clovis",
+            "childeric",
+            "charlemagne",
+            "alaric ii"
+          ]
+        },
+        {
+          "question": "Où se déroule la bataille opposant la troupe de Vercingetorix à celle de Jules César, en 52 av JC ?",
+          "response": [
+            "alesia",
+            "alise-sainte-reine"
+          ],
+          "qcm": [
+            "alesia",
+            "chalon-sur-saone",
+            "avaricum",
+            "lutece"
+          ]
+        },
+        {
+          "question": "En quelle année Charlemagne est couronné empereur à Rome ?",
+          "response": [
+            "800"
+          ],
+          "qcm": [
+            "800",
+            "682",
+            "789",
+            "813"
+          ]
+        },
+        {
+          "question": "Quel évènement célèbre a eu lieu la nuit du 23 au 24 aout 1572 ?",
+          "response": [
+            "le massacre de la saint-barthelemy",
+            "massacre de la saint-barthelemy",
+            "saint-barthelemy"
+          ],
+          "qcm": [
+            "massacre de la saint-barthelemy",
+            "edit de nantes",
+            "fin de la guerre de cent ans",
+            "attentat des gardes corses"
+          ]
+        },
+        {
+          "question": "par qui fut révoqué l'edit de nantes d'henri iv, écrit en 1598 ?",
+          "response": [
+            "louis xiv"
+          ],
+          "qcm": [
+            "louis xiv",
+            "nicolas fouquet",
+            "stanislas i",
+            "napoleon bonaparte"
+          ]
+        },
+        {
+          "question": "Napoléon Bonaparte meurt en 1821 à 51 ans. Sur quelle île meurt-il ? ",
+          "response": [
+            "sainte-helene",
+            "sainte helene",
+            "l'ile de sainte-helene",
+            "ile de sainte-helene"
+          ],
+          "qcm": [
+            "sainte-helene",
+            "bora-bora",
+            "bali",
+            "maurice"
+          ]
+        },
+        {
+          "question": "Qui proposa l'idée de créer une encyclopédie en 1751 ?",
+          "response": [
+            "denis diderot",
+            "diderot"
+          ],
+          "qcm": [
+            "denis diderot",
+            "jean le rond d'alembert",
+            "francis bacon",
+            "françois-marie arouet"
+          ]
+        },
+        {
+          "question": "Où se réunit l'assemblée nationale pour lutter contre le pouvoir en 1789, jurant de ne \"jamais se séparer\" ?",
+          "response": [
+            "salle du jeu de paume",
+            "la salle du jeu de paume"
+          ],
+          "qcm": [
+            "salle du jeu de paume",
+            "prison de la bastille",
+            "champs-de-mars",
+            "varennes-en-argonne"
+          ]
+        },
+        {
+          "question": "Quel est le fusil le plus utilisé par l'armée française durant la premiere guerre mondiale ?",
+          "response": [
+            "lebel",
+            "fusil lebel",
+            "lebel modèle 1886"
+          ],
+          "qcm": [
+            "lebel",
+            "gras",
+            "berthier",
+            "mas"
+          ]
+        },
+        {
+          "question": "Quel est le nom de code du débarquement de Normandie, le 6 juin 1944 ?",
+          "response": [
+            "operation neptune"
+          ],
+          "qcm": [
+            "operation neptune",
+            "operation alsos",
+            "operation dynamo",
+            "operation atlantic"
           ]
         }
       ]

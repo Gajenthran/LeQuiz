@@ -1,27 +1,27 @@
-const fs = require("fs")
-const path = require("path")
+const fs = require('fs')
+const path = require('path')
 
 const COUNTDOWN = 60
 
 const DIC_ACCENTED_CHAR = {
-  é: "e",
-  à: "a",
-  è: "e",
-  ù: "u",
-  â: "a",
-  î: "i",
-  ô: "o",
-  û: "u",
-  ê: "e",
-  ï: "i",
-  ü: "u",
-  ö: "o",
-  ë: "e",
-  ç: "c",
+  é: 'e',
+  à: 'a',
+  è: 'e',
+  ù: 'u',
+  â: 'a',
+  î: 'i',
+  ô: 'o',
+  û: 'u',
+  ê: 'e',
+  ï: 'i',
+  ü: 'u',
+  ö: 'o',
+  ë: 'e',
+  ç: 'c',
 }
 
 const THEMES_JSON = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "/themes.json"))
+  fs.readFileSync(path.join(__dirname, '/themes.json'))
 )
 
 const THEMES = THEMES_JSON.themes
@@ -35,19 +35,11 @@ const shuffleArray = (deck) => {
   }
 }
 
-/**
- * Class representing the game.
- */
 class Game {
-  /**
-   * Create the game.
-   *
-   * @param {array} users - list of users
-   * @param {object} options - game optionss
-   */
   constructor(users, options) {
     // nbPlayer, nbQuiz, countdown, randomQuiz, streak
     this.options = options
+
     this.users = users
     this.turnStreak = false
     this.streakCount = 0
@@ -90,9 +82,8 @@ class Game {
     }
     this.theme = THEMES[this.currentTheme]
     this.answers.fill(-1)
-    for (let i = 0; i < this.theme.questions.length; i++) {
+    for (let i = 0; i < this.theme.questions.length; i++)
       shuffleArray(this.theme.questions[i].qcm)
-    }
   }
 
   isCurrentUser(id) {
@@ -142,13 +133,17 @@ class Game {
         qcmIndex === -1
           ? questions[this.currentQuestion].response[0]
           : questions[this.currentQuestion].qcm.findIndex((q) =>
-              questions[this.currentQuestion].response.includes(q)
+              questions[this.currentQuestion].response.includes(
+                q
+                  .replace(/[^\w ]/g, (char) => DIC_ACCENTED_CHAR[char] || char)
+                  .toLowerCase()
+              )
             )
     }
 
-    const allChecked = this.answers.find(
-      (answer) => answer === -1 || answer === 2
-    )
+    const allChecked =
+      this.answers.findIndex((answer) => answer === -1 || answer === 2) >= 0
+
     if (allChecked) {
       do {
         this.currentQuestion = (this.currentQuestion + 1) % this.answers.length
@@ -210,28 +205,20 @@ class Game {
   }
 
   resetCountdown() {
-    const now = new Date()
     const cd = this.options.countdown || COUNTDOWN
-    this.timer = {
-      start: now.getTime(),
-      end: now.getTime() + cd * 1000,
-    }
+    this.timer = cd * 1000
+
+    return this.timer
   }
 
   getTimer() {
     return this.timer
   }
 
-  /**
-   * Get game options.
-   */
   getOptions() {
     return this.options
   }
 
-  /**
-   * Get game state.
-   */
   getGameState() {
     return {
       turnStreak: this.turnStreak,
@@ -246,20 +233,10 @@ class Game {
     }
   }
 
-  /**
-   * Check if the game has a user.
-   */
-  hasUser() {
-    return this.users.length > 0
-  }
-
   getUsers() {
     return this.users
   }
 
-  /**
-   * Rank users by number of gold.
-   */
   rankUsers() {
     this.users.sort((u1, u2) => (u1.score < u2.score ? 1 : -1))
   }
@@ -273,11 +250,6 @@ class Game {
         : this.currentPlayer - 1
   }
 
-  /**
-   * Remove user from the game and update the game.
-   *
-   * @param {string} id - user id
-   */
   removeUser(id) {
     const index = this.users.findIndex((user) => user.id === id)
     let currentPlayer =

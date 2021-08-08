@@ -8,21 +8,10 @@ import Lobby from '../Lobby/Lobby'
 import Profile from '../Profile/Profile'
 import Game from '../Game/Game'
 
-/**
- * Quiz states with 3 states: game, lobby and rank.
- */
-
 const PROFILE_STATE = 0
 const LOBBYSTATE = 1
 const GAMESTATE = 2
 
-/**
- * Quiz component with 3 states:
- * lobby component, game component
- * and rank component.
- *
- * @param {object} location - get query string
- */
 const Quiz = ({ location }) => {
   const [gameState, setGameState] = useState({})
   const [users, setUsers] = useState([])
@@ -73,7 +62,6 @@ const Quiz = ({ location }) => {
 
   useEffect(() => {
     socket.on('lobby:create-response', ({ user }) => {
-      console.log(user)
       if (user === undefined || !(user.roomId || user.name))
         return <Redirect to="/" />
 

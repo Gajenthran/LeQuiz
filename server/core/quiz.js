@@ -1,14 +1,14 @@
-const Game = require("./game")
-const { hasUser, getUserIndex, getUsersInRoom, getUser } = require("./users")
+const Game = require('./game')
+const { hasUser, getUserIndex, getUsersInRoom, getUser } = require('./users')
 
 const ROOM_LIMIT = 8
 const KEY_LENGTH = 8
-const CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+const CHARS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
 
 const createRandomKey = () => {
   const nbChars = CHARS.length
   let r = 0
-  let key = ""
+  let key = ''
   for (let i = 0; i < KEY_LENGTH; i++) {
     r = Math.floor(Math.random() * nbChars)
     key += CHARS[r]
@@ -16,39 +16,25 @@ const createRandomKey = () => {
   return key
 }
 
-/**
- * Class representing the ginho engine.
- */
-class Ginho {
-  /**
-   * Create ginho engine.
-   */
+class Quiz {
   constructor() {
     this.users = []
     this.game = new Map()
   }
 
-  /**
-   * Launch the game, by getting users in the room,
-   * initialize game state, and game options from the lobby.
-   *
-   * @param {object} io - io
-   * @param {object} socket - socket io
-   * @param {object} options - game options
-   */
   startGame(io, socket, options) {
     const user = getUser(this.users, socket.id)
-    if (!user) return { error: "Cannot connect with user." }
+    if (!user) return { error: 'Cannot connect with user.' }
     const users = getUsersInRoom(this.users, user.room)
     if (this.game.get() !== undefined)
-      return { error: "Cannot create the game: the room is already in game." }
+      return { error: 'Cannot create the game: the room is already in game.' }
 
     this.game.set(user.room, new Game(users, options, socket.id))
     const game = this.game.get(user.room)
     if (!game) return { error: "Game don't exist." }
 
     const gameState = game.getGameState()
-    io.to(user.room).emit("game:new-game", {
+    io.to(user.room).emit('game:new-game', {
       users: game.getUsers(),
       gameState,
       options,
@@ -57,23 +43,23 @@ class Ginho {
 
   returnLobby(io, socket) {
     const user = getUser(this.users, socket.id)
-    if (!user) return { error: "Cannot connect with user." }
+    if (!user) return { error: 'Cannot connect with user.' }
     const game = this.game.get(user.room)
     if (!game) return { error: "Game don't exist." }
 
     this.game.delete(user.room)
-    io.to(user.room).emit("game:return-lobby-response")
+    io.to(user.room).emit('game:return-lobby-response')
   }
 
   createLobby(io, socket, { user, room }) {
     if (!(user.name || room)) {
-      console.warn("Error: Username and room are required.")
-      return { error: "Username and room are required." }
+      console.warn('Error: Username and room are required.')
+      return { error: 'Username and room are required.' }
     }
 
     if (hasUser(this.users, user.name, room)) {
-      console.warn("Error: Username is taken.")
-      return { error: "Username is taken." }
+      console.warn('Error: Username is taken.')
+      return { error: 'Username is taken.' }
     }
 
     user.id = socket.id
@@ -90,13 +76,13 @@ class Ginho {
         if (!this.game.get(key)) break
         attempt--
       }
-      if (!attempt) return { error: "Game already created." }
+      if (!attempt) return { error: 'Game already created.' }
       user.room = key
     }
 
     socket.join(user.room)
     setTimeout(() => {
-      io.to(socket.id).emit("lobby:create-response", { user })
+      io.to(socket.id).emit('lobby:create-response', { user })
     }, 300)
   }
 
@@ -109,7 +95,7 @@ class Ginho {
 
     if (roomExist) userExist = io.sockets.adapter.rooms[room].sockets[socket.id]
 
-    io.to(socket.id).emit("lobby:check-response", {
+    io.to(socket.id).emit('lobby:check-response', {
       error,
       roomExist,
       userExist,
@@ -135,7 +121,7 @@ class Ginho {
       options = game.getOptions()
     }
 
-    io.to(socket.id).emit("lobby:join-response-user", {
+    io.to(socket.id).emit('lobby:join-response-user', {
       user,
       users: getUsersInRoom(this.users, user.room),
       gameStarted,
@@ -143,75 +129,11 @@ class Ginho {
       options,
     })
 
-    socket.broadcast.to(user.room).emit("lobby:join-response-all", {
+    socket.broadcast.to(user.room).emit('lobby:join-response-all', {
       users: getUsersInRoom(this.users, user.room),
     })
   }
 
-  /**
-   * Remove user from the lobby or the game.
-   *
-   * @param {object} io - io
-   * @param {object} socket - socket io
-   */
-  removeUser(io, socket) {
-    const index = this.users.findIndex((user) => user.id === socket.id)
-    const user = this.users[index]
-
-    if (index > -1) {
-      const room = user.room
-      const game = this.game.get(room)
-      if (game) {
-        const currentPlayer = game.removeUser(user.id)
-        if (game.getUsers().length === 0) this.game.delete(room)
-        this.users.splice(index, 1)
-
-        if (currentPlayer) {
-          game.resetCountdown()
-          game.clearCountdown()
-          const newRound = game.newRound(true)
-
-          if (newRound) {
-            io.to(user.room).emit("game:print-quit", {
-              currentPlayer: game.getCurrentPlayer(),
-            })
-
-            setTimeout(() => {
-              io.to(user.room).emit("game:new-round", {
-                users: game.getUsers(),
-                gameState: game.getGameState(),
-              })
-            }, 2500)
-          } else {
-            game.rankUsers()
-            io.to(user.room).emit("game:end-game", {
-              users: game.getUsers(),
-              gameState: game.getGameState(),
-            })
-          }
-        } else {
-          console.log(this.users)
-          console.log(index)
-          game.updateCurrentPlayer(index)
-          io.to(user.room).emit("game:disconnect", {
-            users: getUsersInRoom(game.getUsers(), user.room),
-          })
-        }
-      } else {
-        io.to(user.room).emit("game:disconnect", {
-          users: getUsersInRoom(this.users, room),
-        })
-      }
-    }
-  }
-
-  /**
-   * Update user action.
-   *
-   * @param {object} io - io
-   * @param {object} socket - socket io
-   * @param {*} action - user action
-   */
   selectTheme(io, socket, { selectedIndex, streak }) {
     const index = getUserIndex(this.users, socket.id)
     const user = this.users[index]
@@ -224,15 +146,15 @@ class Ginho {
     const game = this.game.get(user.room)
 
     if (!game || game === null) {
-      console.warn("Game is not existing.")
-      return { error: "Game is not existing." }
+      console.warn('Game is not existing.')
+      return { error: 'Game is not existing.' }
     }
 
     game.selectTheme(selectedIndex, streak)
     const { currentTheme, doneThemes, turnStreak, theme, answers } =
       game.getGameState()
 
-    io.to(user.room).emit("game:select-theme-response", {
+    io.to(user.room).emit('game:select-theme-response', {
       users: game.getUsers(),
       gameState: { currentTheme, doneThemes, turnStreak, theme, answers },
       selectedIndex,
@@ -248,22 +170,22 @@ class Ginho {
         const currentPlayer = game.getCurrentPlayer()
         const newRound = game.newRound(false)
         if (newRound) {
-          io.to(user.room).emit("game:print-score", { currentPlayer })
+          io.to(user.room).emit('game:print-score', { currentPlayer })
 
           setTimeout(() => {
-            io.to(user.room).emit("game:new-round", {
+            io.to(user.room).emit('game:new-round', {
               users: game.getUsers(),
               gameState: game.getGameState(),
             })
           }, 2500)
         } else {
           game.rankUsers()
-          io.to(user.room).emit("game:end-game", {
+          io.to(user.room).emit('game:end-game', {
             users: game.getUsers(),
             gameState: game.getGameState(),
           })
         }
-      }, timer.end - timer.start)
+      }, timer)
     }, 3300)
   }
 
@@ -278,22 +200,22 @@ class Ginho {
     const game = this.game.get(user.room)
 
     if (!game || game === null) {
-      console.warn("Game is not existing.")
-      return { error: "Game is not existing." }
+      console.warn('Game is not existing.')
+      return { error: 'Game is not existing.' }
     }
 
     if (!game.isCurrentUser(user.id)) {
-      console.warn("Not current user.")
-      return { error: "Not current user." }
+      console.warn('Not current user.')
+      return { error: 'Not current user.' }
     }
 
-    io.to(user.room).emit("game:answer-text-all", { text })
+    io.to(user.room).emit('game:answer-text-all', { text })
 
     const { allChecked, response } = game.answerText(text)
-    io.to(user.room).emit("game:answer-text-check", { response })
+    io.to(user.room).emit('game:answer-text-check', { response })
 
     if (allChecked) {
-      io.to(user.room).emit("game:answer-text-response", {
+      io.to(user.room).emit('game:answer-text-response', {
         users: game.getUsers(),
         gameState: game.getGameState(),
       })
@@ -303,17 +225,17 @@ class Ginho {
       const currentPlayer = game.getCurrentPlayer()
       const newRound = game.newRound(false)
       if (newRound) {
-        io.to(user.room).emit("game:print-score", { currentPlayer })
+        io.to(user.room).emit('game:print-score', { currentPlayer })
 
         setTimeout(() => {
-          io.to(user.room).emit("game:new-round", {
+          io.to(user.room).emit('game:new-round', {
             users: game.getUsers(),
             gameState: game.getGameState(),
           })
         }, 2500)
       } else {
         game.rankUsers()
-        io.to(user.room).emit("game:end-game", {
+        io.to(user.room).emit('game:end-game', {
           users: game.getUsers(),
           gameState: game.getGameState(),
         })
@@ -332,22 +254,22 @@ class Ginho {
     const game = this.game.get(user.room)
 
     if (!game || game === null) {
-      console.warn("Game is not existing.")
-      return { error: "Game is not existing." }
+      console.warn('Game is not existing.')
+      return { error: 'Game is not existing.' }
     }
 
     if (!game.isCurrentUser(user.id)) {
-      console.warn("Not current user.")
-      return { error: "Not current user." }
+      console.warn('Not current user.')
+      return { error: 'Not current user.' }
     }
 
-    io.to(user.room).emit("game:answer-qcm-all", { qcmIndex })
+    io.to(user.room).emit('game:answer-qcm-all', { qcmIndex })
 
     const { allChecked, response } = game.answerQCM(qcmIndex)
-    io.to(user.room).emit("game:answer-qcm-check", { qcmIndex, response })
+    io.to(user.room).emit('game:answer-qcm-check', { qcmIndex, response })
 
     if (allChecked) {
-      io.to(user.room).emit("game:answer-qcm-response", {
+      io.to(user.room).emit('game:answer-qcm-response', {
         users: game.getUsers(),
         gameState: game.getGameState(),
       })
@@ -357,23 +279,72 @@ class Ginho {
       const currentPlayer = game.getCurrentPlayer()
       const newRound = game.newRound(false)
       if (newRound) {
-        io.to(user.room).emit("game:print-score", { currentPlayer })
+        io.to(user.room).emit('game:print-score', { currentPlayer })
 
         setTimeout(() => {
-          io.to(user.room).emit("game:new-round", {
+          io.to(user.room).emit('game:new-round', {
             users: game.getUsers(),
             gameState: game.getGameState(),
           })
         }, 2500)
       } else {
         game.rankUsers()
-        io.to(user.room).emit("game:end-game", {
+        io.to(user.room).emit('game:end-game', {
           users: game.getUsers(),
           gameState: game.getGameState(),
         })
       }
     }
   }
+
+  removeUser(io, socket) {
+    const index = this.users.findIndex((user) => user.id === socket.id)
+    const user = this.users[index]
+
+    if (index > -1) {
+      const room = user.room
+      const game = this.game.get(room)
+      if (game) {
+        const currentPlayer = game.removeUser(user.id)
+        if (game.getUsers().length === 0) this.game.delete(room)
+        this.users.splice(index, 1)
+
+        if (currentPlayer) {
+          game.resetCountdown()
+          game.clearCountdown()
+          const newRound = game.newRound(true)
+
+          if (newRound) {
+            io.to(user.room).emit('game:print-quit', {
+              currentPlayer: game.getCurrentPlayer(),
+            })
+
+            setTimeout(() => {
+              io.to(user.room).emit('game:new-round', {
+                users: game.getUsers(),
+                gameState: game.getGameState(),
+              })
+            }, 2500)
+          } else {
+            game.rankUsers()
+            io.to(user.room).emit('game:end-game', {
+              users: game.getUsers(),
+              gameState: game.getGameState(),
+            })
+          }
+        } else {
+          game.updateCurrentPlayer(index)
+          io.to(user.room).emit('game:disconnect', {
+            users: getUsersInRoom(game.getUsers(), user.room),
+          })
+        }
+      } else {
+        io.to(user.room).emit('game:disconnect', {
+          users: getUsersInRoom(this.users, room),
+        })
+      }
+    }
+  }
 }
 
-module.exports = new Ginho()
+module.exports = new Quiz()

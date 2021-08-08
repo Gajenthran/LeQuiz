@@ -45,14 +45,14 @@ try {
   mongoose.connect(
     process.env.MONGO_URI,
     { useNewUrlParser: true, useUnifiedTopology: true },
-    () => console.log(" Mongoose is connected")
+    () => console.warn(" Mongoose is connected")
   )
   mongoose.Promise = global.Promise
   mongoose.connection.on("error", (err) => {
     console.error(`-> ${err.message}`)
   })
 } catch (e) {
-  console.log("Error: could not connect")
+  console.warn("Error: could not connect")
 }
 
 io.on("connection", (socket) => {
@@ -116,8 +116,6 @@ app.get("/list-quiz", async (req, res) => {
     message = "Quiz not found."
   }
 
-  console.log(themes)
-
   res.json({ status, message, body: themes })
 })
 
@@ -139,12 +137,10 @@ app.post("/submit-quiz", (req, res) => {
   }
 
   if (status === 200) {
-    // check responses includes in qcm
-    // check accent in responses
+    // TODO: check responses includes in qcm
+    // TODO: check accent in responses
     saveTheme(title, questions)
   }
-
-  console.log(status, message)
   res.json({ status, message })
 })
 

@@ -23,7 +23,7 @@
           ],
           "qcm": [
             "une lance",
-            "un éclair",
+            "un eclair",
             "un trident",
             "un arc"
           ]
@@ -2565,6 +2565,277 @@
             "operation alsos",
             "operation dynamo",
             "operation atlantic"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "histoire de france (> 1945)",
+      "questions": [
+        {
+          "question": "Quel régime succède la IIIè République suite à la défaite de la France, en 1940 ?",
+          "response": [
+            "le regime de vichy",
+            "regime de vichy",
+            "de vichy",
+            "vichy"
+          ],
+          "qcm": [
+            "regime de vichy",
+            "iv eme republique",
+            "second empire",
+            "monarchie constitutionnelle"
+          ]
+        },
+        {
+          "question": "En quelle année se termine la seconde guerre mondiale ?",
+          "response": [
+            "1945"
+          ],
+          "qcm": [
+            "1945",
+            "1939",
+            "1918",
+            "1935"
+          ]
+        },
+        {
+          "question": "Qui est le premier président de la V ème république ?",
+          "response": [
+            "de gaulle",
+            "charles de gaulle"
+          ],
+          "qcm": [
+            "charles de gaulle",
+            "rené coty",
+            "valery giscard d'estaing",
+            "georges pompidou"
+          ]
+        },
+        {
+          "question": "En 1949, la France signe son adhésion à l'OTAN. Que veut dire l'acronyme OTAN ?",
+          "response": [
+            "organisation du traite de l'atlantique nord"
+          ],
+          "qcm": [
+            "organisation du traite de l'atlantique nord",
+            "organisation territoriale de l'atlantique nord",
+            "organisation du traité de l'amerique du nord",
+            "organisation territoriale de l'amerique du nord"
+          ]
+        },
+        {
+          "question": "Avec quels accords s'est finalisé la crise de mai 1968, en France ?",
+          "response": [
+            "les accords de grenelle",
+            "accords de grenelle",
+            "de grenelle",
+            "grenelle"
+          ],
+          "qcm": [
+            "les accords de grenelle",
+            "l'edit de nantes",
+            "les accords d'evian",
+            "les accords du smig"
+          ]
+        },
+        {
+          "question": "En quelle année se termine la guerre d'algérie ?",
+          "response": [
+            "1962"
+          ],
+          "qcm": [
+            "1962",
+            "1949",
+            "1956",
+            "1964"
+          ]
+        },
+        {
+          "question": "Comment appelle-t-on le phénonème où les partis de courants politiques différents se succèdent au pouvoir ?",
+          "response": [
+            "l'alternance",
+            "alternance",
+            "l'alternance politique",
+            "alternance politique"
+          ],
+          "qcm": [
+            "alternance",
+            "cohabitation",
+            "scrutin",
+            "tripartisme"
+          ]
+        },
+        {
+          "question": "Sous la deuxième cohabitation de 1993, qui était le premier ministre ?",
+          "response": [
+            "edouard balladur",
+            "balladur"
+          ],
+          "qcm": [
+            "edouard balladur",
+            "jacques chirac",
+            "lionel jospin",
+            "francois mitterand"
+          ]
+        },
+        {
+          "question": "Où se joue la finale de la coupe du monde 1998, opposant la France au Brésil ?",
+          "response": [
+            "saint-denis",
+            "stade de france",
+            "france"
+          ],
+          "qcm": [
+            "parc des princes",
+            "stade de france",
+            "stade velodrome",
+            "stade de gerland"
+          ]
+        },
+        {
+          "question": "Qui sont à l'auteur des attentats contre le journal Charlie Hebdo ?",
+          "response": [
+            "cherif et said kouachi",
+            "cherif kouachi et said kouachi",
+            "cherif et said",
+            "said et cherif kouachi",
+            "said kouachi et cherif kouachi",
+            "said et cherif"
+          ],
+          "qcm": [
+            "cherif et said kouachi",
+            "djamel et amedy coulibaly",
+            "abdelhamid et mohammed merah",
+            "salah et mohamed abdeslam"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "chiffres et nombres",
+      "questions": [
+        {
+          "question": "Quel est le nom de code du célèbre agent secret James Bond ?",
+          "response": [
+            "007"
+          ],
+          "qcm": [
+            "007",
+            "001",
+            "999",
+            "231"
+          ]
+        },
+        {
+          "question": "Quelle est la racine carrée de 9 ?",
+          "response": [
+            "3"
+          ],
+          "qcm": [
+            "3",
+            "81",
+            "6",
+            "18"
+          ]
+        },
+        {
+          "question": "Quel numéro il faut composer pour le SAMU ?",
+          "response": [
+            "15"
+          ],
+          "qcm": [
+            "15",
+            "17",
+            "18",
+            "991"
+          ]
+        },
+        {
+          "question": "Combien de personnes étaient présentes lors de la Cène, dernier repas du Christ entouré de ses disciples ?",
+          "response": [
+            "13"
+          ],
+          "qcm": [
+            "13",
+            "12",
+            "10",
+            "20"
+          ]
+        },
+        {
+          "question": "Quel est l'indicatif téléphonique de l'allemagne ?",
+          "response": [
+            "+49",
+            "0049"
+          ],
+          "qcm": [
+            "+49",
+            "+33",
+            "+43",
+            "+34"
+          ]
+        },
+        {
+          "question": "De combien de cases se compose un échiquier ?",
+          "response": [
+            "64"
+          ],
+          "qcm": [
+            "50",
+            "56",
+            "64",
+            "49"
+          ]
+        },
+        {
+          "question": "Quel est le numéro correspondant au département \"Hauts-de-Seine\" ?",
+          "response": [
+            "92"
+          ],
+          "qcm": [
+            "93",
+            "92",
+            "91",
+            "19"
+          ]
+        },
+        {
+          "question": "Quel groupe est à l'auteur de l'album \"1\" ?",
+          "response": [
+            "the beatles",
+            "les beatles",
+            "beatles"
+          ],
+          "qcm": [
+            "the beatles",
+            "the rolling stones",
+            "u2",
+            "pink floyd"
+          ]
+        },
+        {
+          "question": "Ecrire 1579 en chiffres romains.",
+          "response": [
+            "mdxlix"
+          ],
+          "qcm": [
+            "mdxlix",
+            "mdxlxi",
+            "mdlxix",
+            "mldxvi"
+          ]
+        },
+        {
+          "question": "En quelle année @JeffBezos a rejoint Twitter ?",
+          "response": [
+            "2008"
+          ],
+          "qcm": [
+            "2008",
+            "2010",
+            "2012",
+            "2011"
           ]
         }
       ]

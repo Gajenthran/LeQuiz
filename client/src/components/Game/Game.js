@@ -318,6 +318,10 @@ const Game = ({ socket, users, gameState, onFullscreen, winner, options }) => {
                   success: { symbol: ' ', color: 'rgb(216, 202, 184)' },
                 }}
               />
+              <Sound
+                url={SOUNDS['countdown']}
+                playStatus={Sound.status.PLAYING}
+              />
             </div>
           </div>
         )}

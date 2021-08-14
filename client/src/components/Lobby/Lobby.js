@@ -10,8 +10,8 @@ import { IMGS } from '../constants/images'
 
 const Lobby = ({ user, users }) => {
   const [nbPlayer, setNbPlayer] = useState(users.length || 4)
-  const [nbQuiz, setNbQuiz] = useState(users.length + 1)
-  const [countdown, setCountdown] = useState(45)
+  const [nbQuiz, setNbQuiz] = useState(8)
+  const [countdown, setCountdown] = useState(120)
   const [qcm, setQcm] = useState(true)
   const [randomQuiz, setRandomQuiz] = useState(true)
   const [streak, setStreak] = useState(true)
@@ -108,10 +108,10 @@ const Lobby = ({ user, users }) => {
             <h6> durée d'un quiz </h6>
             <Slider
               min={45}
-              max={150}
+              max={300}
               value={countdown}
               onChange={(v) => setCountdown(v)}
-              marks={{ 45: '45', 60: '60', 120: '120', 150: '150' }}
+              marks={{ 45: '45', 60: '60', 120: '120', 150: '150', 300: '300' }}
             />
           </div>
           <div className="lobby-users-options-element">

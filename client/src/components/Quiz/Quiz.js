@@ -206,7 +206,7 @@ const Quiz = ({ location }) => {
   return (
     <>
       {playState === PROFILE_STATE ? (
-        <Profile location={location} />
+        <Profile location={location} warn/>
       ) : playState === LOBBYSTATE ? (
         <Lobby location={location} user={user} users={users} />
       ) : (

@@ -57,6 +57,9 @@ typings/
 
 # dotenv environment variables file
 .env
+variables.env
+*.env
+.env.variables
 
 # next.js build output
 .next
@@ -74,7 +77,5 @@ sendgrid.env
 *.pem
 
 .DS_Store
-variables.env
-*.env
 
 .vscode

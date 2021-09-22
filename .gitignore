@@ -73,4 +73,8 @@ sendgrid.env
 # pem
 *.pem
 
+.DS_Store
+variables.env
+*.env
+
 .vscode
